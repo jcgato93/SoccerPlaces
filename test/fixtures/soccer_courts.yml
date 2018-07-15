@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  location: MyString
+  price: 9.99
+  isActive: false
+
+two:
+  name: MyString
+  location: MyString
+  price: 9.99
+  isActive: false

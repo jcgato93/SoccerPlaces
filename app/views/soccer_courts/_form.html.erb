@@ -1,0 +1,37 @@
+<%= form_with(model: soccer_court, local: true) do |form| %>
+  <% if soccer_court.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(soccer_court.errors.count, "error") %> prohibited this soccer_court from being saved:</h2>
+
+      <ul>
+      <% soccer_court.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :soccer_court_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location, id: :soccer_court_location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :soccer_court_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :isActive %>
+    <%= form.check_box :isActive, id: :soccer_court_isActive %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

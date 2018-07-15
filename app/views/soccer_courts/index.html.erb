@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Soccer Courts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Price</th>
+      <th>Isactive</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @soccer_courts.each do |soccer_court| %>
+      <tr>
+        <td><%= soccer_court.name %></td>
+        <td><%= soccer_court.location %></td>
+        <td><%= soccer_court.price %></td>
+        <td><%= soccer_court.isActive %></td>
+        <td><%= link_to 'Show', soccer_court %></td>
+        <td><%= link_to 'Edit', edit_soccer_court_path(soccer_court) %></td>
+        <td><%= link_to 'Destroy', soccer_court, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Soccer Court', new_soccer_court_path %>
