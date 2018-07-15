@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reservations
   resources :soccer_courts
   resources :rols
   devise_for :users

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dateOfReservation: 2018-07-15
+  timeOfReservation: 2018-07-15 13:36:05
+  isActive: false
+  price: 9.99
+
+two:
+  dateOfReservation: 2018-07-15
+  timeOfReservation: 2018-07-15 13:36:05
+  isActive: false
+  price: 9.99
