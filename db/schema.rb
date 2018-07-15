@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180715193151) do
+ActiveRecord::Schema.define(version: 20180715195145) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20180715193151) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
+    t.bigint "soccer_court_id"
+    t.index ["soccer_court_id"], name: "index_reservations_on_soccer_court_id"
     t.index ["user_id"], name: "index_reservations_on_user_id"
   end
 
@@ -61,6 +63,7 @@ ActiveRecord::Schema.define(version: 20180715193151) do
     t.index ["rol_id"], name: "index_users_on_rol_id"
   end
 
+  add_foreign_key "reservations", "soccer_courts"
   add_foreign_key "reservations", "users"
   add_foreign_key "users", "rols"
 end
