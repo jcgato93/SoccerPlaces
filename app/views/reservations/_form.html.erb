@@ -11,6 +11,16 @@
     </div>
   <% end %>
 
+  <div class="field" style="display:none">
+    <label>Usuario</label>
+    <input type="Text" name="reservation[user_id]" value="<%= current_user.id%>" />
+  </div>
+
+  <div class="field" style="display:none">
+    <label>soccer_court_id</label>
+    <input type="Text" name="reservation[soccer_court_id]" value="<%= @soccer_court_id %>" />
+  </div>
+
   <div class="field">
     <%= form.label :dateOfReservation %>
     <%= form.date_select :dateOfReservation, id: :reservation_dateOfReservation %>

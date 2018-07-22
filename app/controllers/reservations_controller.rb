@@ -1,6 +1,6 @@
 class ReservationsController < ApplicationController
   before_action :set_reservation, only: [:show, :edit, :update, :destroy]
-
+  layout "reservas"
   # GET /reservations
   # GET /reservations.json
   def index
@@ -15,6 +15,7 @@ class ReservationsController < ApplicationController
   # GET /reservations/new
   def new
     @reservation = Reservation.new
+    @soccer_court_id = params[:soccer_court_id]
   end
 
   # GET /reservations/1/edit
@@ -69,6 +70,6 @@ class ReservationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reservation_params
-      params.require(:reservation).permit(:dateOfReservation, :timeOfReservation, :isActive, :price)
+      params.require(:reservation).permit(:dateOfReservation, :timeOfReservation, :isActive, :price, :user_id, :soccer_court_id)
     end
 end

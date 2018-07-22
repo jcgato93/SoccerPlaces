@@ -2,7 +2,7 @@
 
 <h1>Reservations</h1>
 
-<table>
+<table class="table table-responsive table-bordered table-striped table-hover">
   <thead>
     <tr>
       <th>Dateofreservation</th>
@@ -20,9 +20,9 @@
         <td><%= reservation.timeOfReservation %></td>
         <td><%= reservation.isActive %></td>
         <td><%= reservation.price %></td>
-        <td><%= link_to 'Show', reservation %></td>
-        <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
-        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', reservation,class: "btn btn-default" %></td>
+        <td><%= link_to 'Edit', edit_reservation_path(reservation),class: "btn btn-info" %></td>
+        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
