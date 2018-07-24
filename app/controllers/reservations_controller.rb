@@ -29,6 +29,10 @@ class ReservationsController < ApplicationController
 
     respond_to do |format|
       if @reservation.save
+        @reservation= Reservation.last
+        #Envio de correo , registro exitoso
+        NotifyMailer.send_mail(current_user.email,'Registro de reserva',@reservation).deliver
+        
         format.html { redirect_to @reservation, notice: 'Reservation was successfully created.' }
         format.json { render :show, status: :created, location: @reservation }
       else
