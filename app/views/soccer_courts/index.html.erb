@@ -2,7 +2,7 @@
 
 <h1>Soccer Courts</h1>
 
-<table>
+<table class="table table-responsive table-bordered table-striped table-hover">
   <thead>
     <tr>
       <th>Name</th>
@@ -20,9 +20,9 @@
         <td><%= soccer_court.location %></td>
         <td><%= soccer_court.price %></td>
         <td><%= soccer_court.isActive %></td>
-        <td><%= link_to 'Show', soccer_court %></td>
-        <td><%= link_to 'Edit', edit_soccer_court_path(soccer_court) %></td>
-        <td><%= link_to 'Destroy', soccer_court, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', soccer_court,class: "btn btn-default" %></td>
+        <td><%= link_to 'Edit', edit_soccer_court_path(soccer_court),class: "btn btn-info" %></td>
+        <td><%= link_to 'Destroy', soccer_court, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Soccer Court', new_soccer_court_path %>
+<%= link_to 'New Soccer Court', new_soccer_court_path,class: "btn btn-success" %>

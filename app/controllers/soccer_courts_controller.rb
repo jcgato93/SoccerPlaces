@@ -1,6 +1,6 @@
 class SoccerCourtsController < ApplicationController
   before_action :set_soccer_court, only: [:show, :edit, :update, :destroy]
-
+  layout "reservas"
   # GET /soccer_courts
   # GET /soccer_courts.json
   def index
