@@ -3,6 +3,7 @@ class ReservationsController < ApplicationController
   layout "reservas"
   # GET /reservations
   # GET /reservations.json
+  # Mostrar todos los registros de las reservas
   def index
     @reservations = Reservation.all
   end
@@ -13,6 +14,7 @@ class ReservationsController < ApplicationController
   end
 
   # GET /reservations/new
+  # Muestra la vista para registrar una reserva
   def new
     @reservation = Reservation.new
     @soccer_court_id = params[:soccer_court_id]

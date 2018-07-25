@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>style.css - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+  var index_rel_prefix = "../../../";
+</script>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/darkfish.js"></script>
+
+<link href="../../../css/fonts.css" rel="stylesheet">
+<link href="../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../../README_md.html">README</a>
+  
+    <li><a href="../../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../../app/assets/config/manifest_js.html">manifest.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/cable_js.html">cable.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/home_coffee.html">home.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/reservations_coffee.html">reservations.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/rols_coffee.html">rols.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/soccer_courts_coffee.html">soccer_courts.coffee</a>
+  
+    <li><a href="../../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../../app/assets/stylesheets/home_scss.html">home.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/reservations_scss.html">reservations.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/rols_scss.html">rols.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/scaffolds_scss.html">scaffolds.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/soccer_courts_scss.html">soccer_courts.scss</a>
+  
+    <li><a href="../../../app/views/reservations/_reservation_json_jbuilder.html">_reservation.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/reservations/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/reservations/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/rols/_rol_json_jbuilder.html">_rol.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/rols/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/rols/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/soccer_courts/_soccer_court_json_jbuilder.html">_soccer_court.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/soccer_courts/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/soccer_courts/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../../log/development_log.html">development.log</a>
+  
+    <li><a href="../../../package_json.html">package.json</a>
+  
+    <li><a href="../../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap_css.html">dataTables.bootstrap.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap_min_css.html">dataTables.bootstrap.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap4_css.html">dataTables.bootstrap4.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap4_min_css.html">dataTables.bootstrap4.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_foundation_css.html">dataTables.foundation.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_foundation_min_css.html">dataTables.foundation.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_jqueryui_css.html">dataTables.jqueryui.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_jqueryui_min_css.html">dataTables.jqueryui.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_semanticui_css.html">dataTables.semanticui.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_semanticui_min_css.html">dataTables.semanticui.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/jquery_dataTables_css.html">jquery.dataTables.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/jquery_dataTables_min_css.html">jquery.dataTables.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap_js.html">dataTables.bootstrap.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap_min_js.html">dataTables.bootstrap.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap4_js.html">dataTables.bootstrap4.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap4_min_js.html">dataTables.bootstrap4.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_foundation_js.html">dataTables.foundation.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_foundation_min_js.html">dataTables.foundation.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_jqueryui_js.html">dataTables.jqueryui.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_jqueryui_min_js.html">dataTables.jqueryui.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_semanticui_js.html">dataTables.semanticui.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_semanticui_min_js.html">dataTables.semanticui.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/jquery_dataTables_js.html">jquery.dataTables.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/jquery_dataTables_min_js.html">jquery.dataTables.min.js</a>
+  
+    <li><a href="../../../public/DataTables/datatables_css.html">datatables.css</a>
+  
+    <li><a href="../../../public/DataTables/datatables_js.html">datatables.js</a>
+  
+    <li><a href="../../../public/DataTables/datatables_min_css.html">datatables.min.css</a>
+  
+    <li><a href="../../../public/DataTables/datatables_min_js.html">datatables.min.js</a>
+  
+    <li><a href="../../../public/Home Page/css/JiSlider_css.html">JiSlider.css</a>
+  
+    <li><a href="../../../public/Home Page/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../../public/Home Page/css/font-awesome_css.html">font-awesome.css</a>
+  
+    <li><a href="../../../public/Home Page/css/lightbox_css.html">lightbox.css</a>
+  
+    <li><a href="../../../public/Home Page/css/owl_carousel_css.html">owl.carousel.css</a>
+  
+    <li><a href="../../../public/Home Page/css/style_css.html">style.css</a>
+  
+    <li><a href="../../../public/Home Page/index_html.html">index.html</a>
+  
+    <li><a href="../../../public/Home Page/js/JiSlider_js.html">JiSlider.js</a>
+  
+    <li><a href="../../../public/Home Page/js/SmoothScroll_min_js.html">SmoothScroll.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../../public/Home Page/js/easing_js.html">easing.js</a>
+  
+    <li><a href="../../../public/Home Page/js/index_js.html">index.js</a>
+  
+    <li><a href="../../../public/Home Page/js/jquery-2_1_4_min_js.html">jquery-2.1.4.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/jquery_countup_js.html">jquery.countup.js</a>
+  
+    <li><a href="../../../public/Home Page/js/jquery_waypoints_min_js.html">jquery.waypoints.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/lightbox-plus-jquery_min_js.html">lightbox-plus-jquery.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/moment-timezone-with-data_js.html">moment-timezone-with-data.js</a>
+  
+    <li><a href="../../../public/Home Page/js/moment_js.html">moment.js</a>
+  
+    <li><a href="../../../public/Home Page/js/move-top_js.html">move-top.js</a>
+  
+    <li><a href="../../../public/Home Page/js/owl_carousel_js.html">owl.carousel.js</a>
+  
+    <li><a href="../../../public/Home Page/js/timer_js.html">timer.js</a>
+  
+    <li><a href="../../../public/Login/css/style_css.html">style.css</a>
+  
+    <li><a href="../../../public/Login/index_html.html">index.html</a>
+  
+    <li><a href="../../../public/Login/js/easyResponsiveTabs_js.html">easyResponsiveTabs.js</a>
+  
+    <li><a href="../../../public/Login/js/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../../public/apple-touch-icon-precomposed_png.html">apple-touch-icon-precomposed.png</a>
+  
+    <li><a href="../../../public/apple-touch-icon_png.html">apple-touch-icon.png</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_css.html">bootstrap-theme.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_css_map.html">bootstrap-theme.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_min_css.html">bootstrap-theme.min.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_min_css_map.html">bootstrap-theme.min.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_css_map.html">bootstrap.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_min_css.html">bootstrap.min.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_min_css_map.html">bootstrap.min.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../../public/bootstrap/js/bootstrap_min_js.html">bootstrap.min.js</a>
+  
+    <li><a href="../../../public/bootstrap/js/npm_js.html">npm.js</a>
+  
+    <li><a href="../../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../../../public/jquery-3_3_1_min_js.html">jquery-3.3.1.min.js</a>
+  
+    <li><a href="../../../public/robots_txt.html">robots</a>
+  
+    <li><a href="../../../tmp/restart_txt.html">restart</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page public/Login/css/style.css">
+
+<pre>--</pre>
+
+<p>Author: W3layouts Author URL: <a
+href="http://w3layouts.com">w3layouts.com</a> License: Creative Commons
+Attribution 3.0 Unported License URL: <a
+href="http://creativecommons.org/licenses/by/3.0">creativecommons.org/licenses/by/3.0</a>/
+–</p>
+
+<pre>--reset--</pre>
+
+<p>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav
+ul,nav
+li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu,
+nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;} blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:&#39;&#39;;content:none;}
+table{border-collapse:collapse;border-spacing:0;} /*–start editing from
+here–*/ a{text-decoration:none;} .txt-rt{text-align:right;}/* text align
+right */ .txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */ .float-lt{float:left;}/* float
+left */ .clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */ .vertical-base{
+vertical-align:baseline;}/* vertical align baseline */ .vertical-top{ 
+vertical-align:top;}/* vertical align top */ nav.vertical ul li{    
+display:block;}/* vertical menu */ nav.horizontal ul li{   display:
+inline-block;}/* horizontal menu */ img{max-width:100%;} /*–end reset–*/
+body {</p>
+
+<pre>font-family: &#39;Text Me One&#39;, sans-serif;
+background: url(../images/bg.png)repeat rgba(41, 176, 126, 0.89);
+background-attachment: fixed;</pre>
+
+<p>} h1 {</p>
+
+<pre>font-size: 3em;
+text-align: center;
+color: #fff;
+font-weight: 100;</pre>
+
+<p>} /<strong>–main–</strong>/ .main {</p>
+
+<pre>padding: 4em 0 0;</pre>
+
+<p>} .main-info {</p>
+
+<pre>width: 30%;
+margin: 3em auto;</pre>
+
+<p>} /<strong>–//main–</strong>/ .agileits-login {</p>
+
+<pre>padding:3em;
+    padding-bottom:0;</pre>
+
+<p>} .agileits-login <a href="type="text"">input</a>,.agileits-login <a
+href="type="password"">input</a> {</p>
+
+<pre>outline: none;
+font-size: 1em;
+color: #fff;
+padding: 10px;
+margin: 0;
+width: 89.8%;
+border: none;
+border-bottom: 1px dashed #ccc;
+-webkit-appearance: none;
+margin-bottom: 2.5em;
+background: transparent;</pre>
+
+<p>} .agileits-login <a href="type="text"">input</a>:focus,.agileits-login <a
+href="type="password"">input</a>:focus{</p>
+
+<pre>border-color: #d24747;
+border-bottom-style: double;</pre>
+
+<p>} ::-webkit-input-placeholder {</p>
+
+<pre>color: #fff;
+font-family: &#39;Text Me One&#39;, sans-serif;</pre>
+
+<p>}</p>
+
+<p>:-moz-placeholder { /* Firefox 18- */</p>
+
+<pre>color: #fff;</pre>
+
+<p>}</p>
+
+<p>::-moz-placeholder {  /* Firefox 19+ */</p>
+
+<pre>color: #fff;</pre>
+
+<p>}</p>
+
+<p>:-ms-input-placeholder {</p>
+
+<pre>color: #fff;</pre>
+
+<p>} /*– checkbox –*/ .agileits-login label {</p>
+
+<pre>font-size: 1em;
+color: #fff;
+font-weight: 400;
+cursor: pointer;
+position: relative;</pre>
+
+<p>} input.checkbox {</p>
+
+<pre>background: #2b2d41;
+    cursor: pointer;
+width: 1.2em;
+height: 1.2em;</pre>
+
+<p>} input.checkbox:before {</p>
+
+<pre>content: &quot;&quot;;
+position: absolute;
+width: 1.2em;
+height: 1.2em;
+background: inherit;
+cursor: pointer;</pre>
+
+<p>} input.checkbox:after {</p>
+
+<pre>content: &quot;&quot;;
+transition: .4s ease-in-out;
+position: absolute;
+top: 0px;
+left: 0;
+z-index: 1;
+width: 1.2em;
+height: 1.2em;
+border: 1px solid #d24747;</pre>
+
+<p>} input.checkbox:checked:after {</p>
+
+<pre>transform: rotate(-45deg);
+height: .5rem;
+border-color: #d24747;
+border-top-color: transparent;
+border-right-color: transparent;</pre>
+
+<p>} .anim input.checkbox:checked:after {</p>
+
+<pre>transform: rotate(-45deg);
+height: .5rem;
+border-color: transparent;
+border-right-color: transparent;
+animation: .4s rippling .4s ease;
+animation-fill-mode: forwards;</pre>
+
+<p>} @keyframes rippling {</p>
+
+<pre>50% {
+        border-left-color: #d24747;
+}
+100% {
+        border-bottom-color: #d24747;
+        border-left-color: #d24747;
+}</pre>
+
+<p>}  /*– //checkbox –*/  .wthree-text ul li {</p>
+
+<pre>display: inline-block;
+float: left;</pre>
+
+<p>} .wthree-text ul li:nth-child(2) {</p>
+
+<pre>float: right;</pre>
+
+<p>} .wthree-text ul li a {</p>
+
+<pre>font-size: 1em;
+color: #fff;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;</pre>
+
+<p>} .wthree-text ul li a:hover{</p>
+
+<pre>color: #d24747;</pre>
+
+<p>} .w3ls-submit {</p>
+
+<pre>text-align: center;
+margin-top: 3em;</pre>
+
+<p>} .submit-text {</p>
+
+<pre>position: relative;
+display: inline-block;</pre>
+
+<p>} .submit-text span{</p>
+
+<pre>position: absolute;
+background: url(../images/i1.png)no-repeat 0px 0px;
+width: 63px;
+height: 30px;
+background-size: 100%;
+top: 17px;
+left: -34px;
+    cursor:pointer;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a> {</p>
+
+<pre>font-size: 1em;
+color: #fff;
+border: 3px solid #b02932;
+outline: none;
+cursor: pointer;
+padding: 1.1em 8em 1.1em 5em;
+-webkit-appearance: none;
+background: url(../images/i1.png)#b02932 no-repeat 175px 9px;
+transition: .5s all;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>:hover {</p>
+
+<pre>background-position: 154px 9px;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>.register{</p>
+
+<pre>background-position: 198px 9px;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>.register:hover{</p>
+
+<pre>background-position: 180px 9px;</pre>
+
+<p>} /*– SAP –*/ .sap_tabs{</p>
+
+<pre class="ruby"><span class="ruby-identifier">clear</span><span class="ruby-value">:both</span>;
+</pre>
+
+<p>} .tab_box{</p>
+
+<pre>background:#fd926d;
+padding: 2em;</pre>
+
+<p>} .top1{</p>
+
+<pre>margin-top: 2%;</pre>
+
+<p>} .resp-tabs-list {</p>
+
+<pre>list-style: none;
+text-align: center;</pre>
+
+<p>} .resp-tab-item {</p>
+
+<pre>color: #fff;
+font-size: 1.5em;
+cursor: pointer;
+display: inline-block;
+margin: 0;
+outline: none;
+-webkit-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+width: 50%;
+background: #25273b;
+float: left;
+padding: 1.1em 0;</pre>
+
+<p>} .resp-tab-active {</p>
+
+<pre>text-shadow: none;
+color: #d24747;
+background: #1e2032;</pre>
+
+<p>} .resp-tabs-container {</p>
+
+<pre>padding: 0px;
+background-color: #2b2d41;
+clear: left;</pre>
+
+<p>} h2.resp-accordion {</p>
+
+<pre>cursor: pointer;
+padding: 5px;
+display: none;</pre>
+
+<p>} .resp-tab-content {</p>
+
+<pre>display: none;</pre>
+
+<p>} .resp-content-active, .resp-accordion-active {</p>
+
+<pre>display: block;</pre>
+
+<p>} .resp-tab-item label{</p>
+
+<pre>margin-right:8px;</pre>
+
+<p>} /*– //SAP –*/  /*– copyright –*/ .copyright {</p>
+
+<pre>margin: 2em 0 1em;
+text-align: center;</pre>
+
+<p>} .copyright p {</p>
+
+<pre>font-size: 1em;
+color: #fff;
+    line-height:1.8em;</pre>
+
+<p>} .copyright p a{</p>
+
+<pre>color: #fff;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;</pre>
+
+<p>} .copyright p a:hover{</p>
+
+<pre>color: #000; 
+    font-weight: 700;</pre>
+
+<p>} /*– //copyright –*/ /*– responsive-design –*/ @media(max-width:1440px){
+.main-info {</p>
+
+<pre>width: 35%;</pre>
+
+<p>} } @media(max-width:1366px){ .main {</p>
+
+<pre>padding: 3em 0 0;</pre>
+
+<p>} h1 {</p>
+
+<pre>font-size: 2.8em;</pre>
+
+<p>} .main-info {</p>
+
+<pre>margin: 2em auto;</pre>
+
+<p>} } @media(max-width:1280px){ .main {</p>
+
+<pre>padding: 2.5em 0 0;</pre>
+
+<p>} h1 {</p>
+
+<pre>font-size: 2.6em;</pre>
+
+<p>} .main-info {</p>
+
+<pre>width: 38%;</pre>
+
+<p>} .agileits-login {</p>
+
+<pre>padding: 2.5em;</pre>
+
+<p>} } @media(max-width:1080px){ h1 {</p>
+
+<pre>font-size: 2.3em;</pre>
+
+<p>} .main-info {</p>
+
+<pre>width: 42%;</pre>
+
+<p>} .agileits-login <a href="type="text"">input</a>, .agileits-login <a
+href="type="password"">input</a> {</p>
+
+<pre>margin-bottom: 2.2em;</pre>
+
+<p>} }  @media(max-width:991px){ .main-info {</p>
+
+<pre>width: 50%;</pre>
+
+<p>}  .main {</p>
+
+<pre>padding: 2em 0 0;</pre>
+
+<p>} } @media(max-width:900px){ .agileits-login <a
+href="type="submit"">input</a> {</p>
+
+<pre>padding: 1.1em 7em 1.1em 3em;
+background-position: 126px 9px;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>:hover {</p>
+
+<pre>background-position: 110px 9px;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>.register {</p>
+
+<pre>background-position: 175px 9px;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>.register:hover {</p>
+
+<pre>background-position: 150px 9px;</pre>
+
+<p>} } @media(max-width:800px){ .main-info {</p>
+
+<pre>width: 57%;</pre>
+
+<p>} } @media(max-width:640px){ .main-info {</p>
+
+<pre>width: 65%;</pre>
+
+<p>} } @media(max-width:600px){ .main-info {</p>
+
+<pre>width: 70%;</pre>
+
+<p>} } @media(max-width:480px){ .main {</p>
+
+<pre>padding: 1.5em 0 0;</pre>
+
+<p>} h1 {</p>
+
+<pre>font-size: 1.8em;</pre>
+
+<p>} .main-info {</p>
+
+<pre>    width: 78%;
+margin: 1.3em auto;</pre>
+
+<p>} .resp-tab-item {</p>
+
+<pre>font-size: 1.3em; 
+padding: 1em 0;</pre>
+
+<p>} .agileits-login {</p>
+
+<pre>padding: 2em;</pre>
+
+<p>} .agileits-login <a href="type="text"">input</a>, .agileits-login <a
+href="type="password"">input</a> {</p>
+
+<pre>width: 87%;</pre>
+
+<p>} .copyright p {</p>
+
+<pre>padding: 0 1em;</pre>
+
+<p>} } @media(max-width:414px){ h1 {</p>
+
+<pre>font-size: 1.7em;</pre>
+
+<p>} .main-info {</p>
+
+<pre>width: 80%;</pre>
+
+<p>} .wthree-text ul li {</p>
+
+<pre>display: block;
+float: none;</pre>
+
+<p>} .wthree-text ul li:nth-child(2) {</p>
+
+<pre>float: none;
+margin-top: 1em;</pre>
+
+<p>} .w3ls-submit {</p>
+
+<pre>margin-top: 2em;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a> {</p>
+
+<pre>padding: 0.9em 7em 0.9em 2em;
+background-position: 110px 10px;
+font-size: .9em;
+background-size: 30%;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>:hover {</p>
+
+<pre>background-position: 85px 10px;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>.register {</p>
+
+<pre>background-position: 130px 9px;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>.register:hover {</p>
+
+<pre>background-position: 115px 9px;</pre>
+
+<p>} } @media(max-width:384px){ .agileits-login {</p>
+
+<pre>padding: 1.8em;</pre>
+
+<p>} .agileits-login <a href="type="text"">input</a>, .agileits-login <a
+href="type="password"">input</a> {</p>
+
+<pre>width: 83%;</pre>
+
+<p>} .agileits-login <a href="type="text"">input</a>, .agileits-login <a
+href="type="password"">input</a> {</p>
+
+<pre>margin-bottom: 1.8em;</pre>
+
+<p>} .main-info {</p>
+
+<pre>width: 85%;</pre>
+
+<p>} } @media(max-width:375px){ } @media(max-width:320px){ .main {</p>
+
+<pre>padding: 1em 0 0;</pre>
+
+<p>} h1 {</p>
+
+<pre>font-size: 1.5em;</pre>
+
+<p>} .resp-tab-item {</p>
+
+<pre>font-size: 1.1em; 
+    padding: 0.9em 0;</pre>
+
+<p>} .main-info {</p>
+
+<pre>width: 88%;</pre>
+
+<p>} .agileits-login {</p>
+
+<pre>padding: 1.5em;</pre>
+
+<p>} .agileits-login <a href="type="text"">input</a>, .agileits-login <a
+href="type="password"">input</a> {</p>
+
+<pre>width: 96%;
+font-size: .9em;
+padding: 10px 5px;</pre>
+
+<p>} .agileits-login <a href="type="text"">input</a>, .agileits-login <a
+href="type="password"">input</a> {</p>
+
+<pre>margin-bottom: 1.5em;</pre>
+
+<p>} .agileits-login label {</p>
+
+<pre>font-size: 0.9em;</pre>
+
+<p>} input.checkbox:after {</p>
+
+<pre>width: 1em;
+height: 1em;</pre>
+
+<p>} input.checkbox {</p>
+
+<pre>width: 1em;
+height: 1em;</pre>
+
+<p>} .wthree-text ul li a {</p>
+
+<pre>font-size: 0.9em;</pre>
+
+<p>} .w3ls-submit {</p>
+
+<pre>margin-top: 1.5em;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a> {</p>
+
+<pre>padding: 0.8em 5em 0.8em 2em;
+background-position: 88px 11px;
+font-size: .8em;
+background-size: 25%;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>:hover {</p>
+
+<pre>background-position: 76px 11px;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>.register {</p>
+
+<pre>background-position: 114px 9px;</pre>
+
+<p>} .agileits-login <a href="type="submit"">input</a>.register:hover {</p>
+
+<pre>background-position: 99px 9px;</pre>
+
+<p>} .copyright p {</p>
+
+<pre>font-size: 0.9em;</pre>
+
+<p>} .copyright {</p>
+
+<pre>margin: 0 0 1em;</pre>
+
+<p>} } /*– //responsive-design –*/</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.4.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

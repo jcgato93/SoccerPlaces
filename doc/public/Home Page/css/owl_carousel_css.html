@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>owl.carousel.css - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+  var index_rel_prefix = "../../../";
+</script>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/darkfish.js"></script>
+
+<link href="../../../css/fonts.css" rel="stylesheet">
+<link href="../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../../README_md.html">README</a>
+  
+    <li><a href="../../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../../app/assets/config/manifest_js.html">manifest.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/cable_js.html">cable.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/home_coffee.html">home.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/reservations_coffee.html">reservations.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/rols_coffee.html">rols.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/soccer_courts_coffee.html">soccer_courts.coffee</a>
+  
+    <li><a href="../../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../../app/assets/stylesheets/home_scss.html">home.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/reservations_scss.html">reservations.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/rols_scss.html">rols.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/scaffolds_scss.html">scaffolds.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/soccer_courts_scss.html">soccer_courts.scss</a>
+  
+    <li><a href="../../../app/views/reservations/_reservation_json_jbuilder.html">_reservation.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/reservations/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/reservations/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/rols/_rol_json_jbuilder.html">_rol.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/rols/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/rols/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/soccer_courts/_soccer_court_json_jbuilder.html">_soccer_court.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/soccer_courts/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/soccer_courts/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../../log/development_log.html">development.log</a>
+  
+    <li><a href="../../../package_json.html">package.json</a>
+  
+    <li><a href="../../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap_css.html">dataTables.bootstrap.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap_min_css.html">dataTables.bootstrap.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap4_css.html">dataTables.bootstrap4.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap4_min_css.html">dataTables.bootstrap4.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_foundation_css.html">dataTables.foundation.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_foundation_min_css.html">dataTables.foundation.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_jqueryui_css.html">dataTables.jqueryui.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_jqueryui_min_css.html">dataTables.jqueryui.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_semanticui_css.html">dataTables.semanticui.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_semanticui_min_css.html">dataTables.semanticui.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/jquery_dataTables_css.html">jquery.dataTables.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/jquery_dataTables_min_css.html">jquery.dataTables.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap_js.html">dataTables.bootstrap.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap_min_js.html">dataTables.bootstrap.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap4_js.html">dataTables.bootstrap4.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap4_min_js.html">dataTables.bootstrap4.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_foundation_js.html">dataTables.foundation.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_foundation_min_js.html">dataTables.foundation.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_jqueryui_js.html">dataTables.jqueryui.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_jqueryui_min_js.html">dataTables.jqueryui.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_semanticui_js.html">dataTables.semanticui.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_semanticui_min_js.html">dataTables.semanticui.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/jquery_dataTables_js.html">jquery.dataTables.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/jquery_dataTables_min_js.html">jquery.dataTables.min.js</a>
+  
+    <li><a href="../../../public/DataTables/datatables_css.html">datatables.css</a>
+  
+    <li><a href="../../../public/DataTables/datatables_js.html">datatables.js</a>
+  
+    <li><a href="../../../public/DataTables/datatables_min_css.html">datatables.min.css</a>
+  
+    <li><a href="../../../public/DataTables/datatables_min_js.html">datatables.min.js</a>
+  
+    <li><a href="../../../public/Home Page/css/JiSlider_css.html">JiSlider.css</a>
+  
+    <li><a href="../../../public/Home Page/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../../public/Home Page/css/font-awesome_css.html">font-awesome.css</a>
+  
+    <li><a href="../../../public/Home Page/css/lightbox_css.html">lightbox.css</a>
+  
+    <li><a href="../../../public/Home Page/css/owl_carousel_css.html">owl.carousel.css</a>
+  
+    <li><a href="../../../public/Home Page/css/style_css.html">style.css</a>
+  
+    <li><a href="../../../public/Home Page/index_html.html">index.html</a>
+  
+    <li><a href="../../../public/Home Page/js/JiSlider_js.html">JiSlider.js</a>
+  
+    <li><a href="../../../public/Home Page/js/SmoothScroll_min_js.html">SmoothScroll.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../../public/Home Page/js/easing_js.html">easing.js</a>
+  
+    <li><a href="../../../public/Home Page/js/index_js.html">index.js</a>
+  
+    <li><a href="../../../public/Home Page/js/jquery-2_1_4_min_js.html">jquery-2.1.4.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/jquery_countup_js.html">jquery.countup.js</a>
+  
+    <li><a href="../../../public/Home Page/js/jquery_waypoints_min_js.html">jquery.waypoints.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/lightbox-plus-jquery_min_js.html">lightbox-plus-jquery.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/moment-timezone-with-data_js.html">moment-timezone-with-data.js</a>
+  
+    <li><a href="../../../public/Home Page/js/moment_js.html">moment.js</a>
+  
+    <li><a href="../../../public/Home Page/js/move-top_js.html">move-top.js</a>
+  
+    <li><a href="../../../public/Home Page/js/owl_carousel_js.html">owl.carousel.js</a>
+  
+    <li><a href="../../../public/Home Page/js/timer_js.html">timer.js</a>
+  
+    <li><a href="../../../public/Login/css/style_css.html">style.css</a>
+  
+    <li><a href="../../../public/Login/index_html.html">index.html</a>
+  
+    <li><a href="../../../public/Login/js/easyResponsiveTabs_js.html">easyResponsiveTabs.js</a>
+  
+    <li><a href="../../../public/Login/js/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../../public/apple-touch-icon-precomposed_png.html">apple-touch-icon-precomposed.png</a>
+  
+    <li><a href="../../../public/apple-touch-icon_png.html">apple-touch-icon.png</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_css.html">bootstrap-theme.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_css_map.html">bootstrap-theme.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_min_css.html">bootstrap-theme.min.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_min_css_map.html">bootstrap-theme.min.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_css_map.html">bootstrap.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_min_css.html">bootstrap.min.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_min_css_map.html">bootstrap.min.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../../public/bootstrap/js/bootstrap_min_js.html">bootstrap.min.js</a>
+  
+    <li><a href="../../../public/bootstrap/js/npm_js.html">npm.js</a>
+  
+    <li><a href="../../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../../../public/jquery-3_3_1_min_js.html">jquery-3.3.1.min.js</a>
+  
+    <li><a href="../../../public/robots_txt.html">robots</a>
+  
+    <li><a href="../../../tmp/restart_txt.html">restart</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page public/Home Page/css/owl.carousel.css">
+
+<pre>     Owl Carousel Owl Demo Theme 
+     v1.24
+
+ #owl-demo .item img{
+     display: block;
+     height: auto;
+ }
+
+Styling Next and Prev buttons</pre>
+
+<p>/* Clickable class fix problem with hover on touch devices */ /* Use it for
+non-touch hover action */ .owl-theme .owl-controls.clickable .owl-buttons
+div:hover{</p>
+
+<pre>filter: Alpha(Opacity=100);/*IE7 fix*/
+opacity: 1;
+text-decoration: none;</pre>
+
+<p>}</p>
+
+<p>/* Styling Pagination*/</p>
+
+<p>.owl-theme .owl-controls .owl-page{</p>
+
+<pre>      display:inline-block;
+      zoom: 1;
+display: inline;/*IE7 life-saver */</pre>
+
+<p>} .owl-theme .owl-controls .owl-page span{</p>
+
+<pre>    display: block;
+    width: 13px;
+    height: 13px;
+    margin: 5px 6px;
+        background: #000;
+border-radius: 100px;</pre>
+
+<p>} .owl-pagination {</p>
+
+<pre>position: absolute;
+right: 35%;
+bottom: 10px;</pre>
+
+<p>} .owl-carousel2 div.owl-pagination {</p>
+
+<pre>position: absolute;
+right: -6%;
+top: 166px;
+z-index: 999;</pre>
+
+<p>} .owl-carousel2 div.owl-controls .owl-page {</p>
+
+<pre>display:block;
+zoom: 1;
+padding:0.1em 0;</pre>
+
+<p>} .owl-carousel2 div.owl-controls .owl-page.active span, .owl-carousel2
+div.owl-controls.clickable .owl-page:hover span{</p>
+
+<pre>background:#2ec06c;</pre>
+
+<p>} .owl-carousel1 .owl-controls .owl-page span{</p>
+
+<pre>background:#404040;</pre>
+
+<p>} .owl-carousel1 div.owl-pagination {</p>
+
+<pre>position: absolute;
+right: 48%;
+top: 130px;</pre>
+
+<p>} .owl-carousel1 .owl-controls .owl-page span{</p>
+
+<pre>background:#b3b3b3;</pre>
+
+<p>} .owl-carousel1 div.owl-controls .owl-page {</p>
+
+<pre>display:inline-block;
+zoom: 1;
+padding:0 0.2em;</pre>
+
+<p>} .owl-carousel1 div.owl-controls .owl-page.active span, .owl-carousel1
+div.owl-controls.clickable .owl-page:hover span{</p>
+
+<pre>background:#468407;</pre>
+
+<p>} .owl-theme .owl-controls .owl-page.active span, .owl-theme
+.owl-controls.clickable .owl-page:hover span{</p>
+
+<pre>background:#468407;</pre>
+
+<p>}</p>
+
+<p>/* If PaginationNumbers is true */</p>
+
+<p>.owl-theme .owl-controls .owl-page span.owl-numbers{</p>
+
+<pre>height: auto;
+width: auto;
+color: #FFF;
+padding: 2px 10px;
+font-size: 12px;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;</pre>
+
+<p>}</p>
+
+<p>/* preloading images */ .owl-item.loading{</p>
+
+<pre>min-height: 150px;
+background: url(AjaxLoader.gif) no-repeat center center</pre>
+
+<p>} /*</p>
+
+<pre>      Core Owl Carousel CSS File
+      v1.24
+/</pre>
+
+<p>/* clearfix */ .owl-carousel .owl-wrapper:after {</p>
+
+<pre>content: &quot;.&quot;;
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;</pre>
+
+<p>} /* display none until init */ .owl-carousel{</p>
+
+<pre>display: none;
+position: relative;
+-ms-touch-action: pan-y;</pre>
+
+<p>} .owl-carousel .owl-wrapper{</p>
+
+<pre>display: none;
+position: relative;
+-webkit-transform: translate3d(0px, 0px, 0px);</pre>
+
+<p>} .owl-carousel .owl-wrapper-outer{</p>
+
+<pre>overflow: hidden;
+position: relative;
+width: 100%;</pre>
+
+<p>} .owl-carousel .owl-wrapper-outer.autoHeight{</p>
+
+<pre>-webkit-transition: height 500ms ease-in-out;
+-moz-transition: height 500ms ease-in-out;
+-ms-transition: height 500ms ease-in-out;
+-o-transition: height 500ms ease-in-out;
+transition: height 500ms ease-in-out;</pre>
+
+<p>}</p>
+
+<p>.owl-carousel .owl-item{</p>
+
+<pre>float: left;</pre>
+
+<p>} .owl-controls .owl-page, .owl-controls .owl-buttons div{</p>
+
+<pre>cursor: pointer;</pre>
+
+<p>} .owl-controls {</p>
+
+<pre>-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);</pre>
+
+<p>}</p>
+
+<p>/* mouse grab icon */ .grabbing {</p>
+
+<pre>cursor:url(grabbing.png) 8 8, move;</pre>
+
+<p>}</p>
+
+<p>/* fix */ .owl-carousel  .owl-wrapper, .owl-carousel  .owl-item{</p>
+
+<pre>      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility:    hidden;
+      -ms-backface-visibility:     hidden;
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);</pre>
+
+<p>}</p>
+
+<p>/* CSS3 Transitions */</p>
+
+<p>.owl-origin {</p>
+
+<pre>-webkit-perspective: 1200px;
+-webkit-perspective-origin-x : 50%;
+-webkit-perspective-origin-y : 50%;
+-moz-perspective : 1200px;
+-moz-perspective-origin-x : 50%;
+-moz-perspective-origin-y : 50%;
+perspective : 1200px;</pre>
+
+<p>} /* fade */ .owl-fade-out {</p>
+
+<pre>z-index: 10;
+-webkit-animation: fadeOut .7s both ease;
+-moz-animation: fadeOut .7s both ease;
+animation: fadeOut .7s both ease;</pre>
+
+<p>} .owl-fade-in {</p>
+
+<pre>-webkit-animation: fadeIn .7s both ease;
+-moz-animation: fadeIn .7s both ease;
+animation: fadeIn .7s both ease;</pre>
+
+<p>} /* backSlide */ .owl-backSlide-out {</p>
+
+<pre>-webkit-animation: backSlideOut 1s both ease;
+-moz-animation: backSlideOut 1s both ease;
+animation: backSlideOut 1s both ease;</pre>
+
+<p>} .owl-backSlide-in {</p>
+
+<pre>-webkit-animation: backSlideIn 1s both ease;
+-moz-animation: backSlideIn 1s both ease;
+animation: backSlideIn 1s both ease;</pre>
+
+<p>} /* goDown */ .owl-goDown-out {</p>
+
+<pre>-webkit-animation: scaleToFade .7s ease both;
+-moz-animation: scaleToFade .7s ease both;
+animation: scaleToFade .7s ease both;</pre>
+
+<p>} .owl-goDown-in {</p>
+
+<pre>-webkit-animation: goDown .6s ease both;
+-moz-animation: goDown .6s ease both;
+animation: goDown .6s ease both;</pre>
+
+<p>} /* scaleUp */ .owl-fadeUp-in {</p>
+
+<pre>-webkit-animation: scaleUpFrom .5s ease both;
+-moz-animation: scaleUpFrom .5s ease both;
+animation: scaleUpFrom .5s ease both;</pre>
+
+<p>}</p>
+
+<p>.owl-fadeUp-out {</p>
+
+<pre>-webkit-animation: scaleUpTo .5s ease both;
+-moz-animation: scaleUpTo .5s ease both;
+animation: scaleUpTo .5s ease both;</pre>
+
+<p>} /* Keyframes */ /<strong>empty</strong>/ @-webkit-keyframes empty {</p>
+
+<pre class="ruby"><span class="ruby-value">0</span><span class="ruby-operator">%</span> {<span class="ruby-value">opacity:</span> <span class="ruby-value">1</span>}
+</pre>
+
+<p>} @-moz-keyframes empty {</p>
+
+<pre class="ruby"><span class="ruby-value">0</span><span class="ruby-operator">%</span> {<span class="ruby-value">opacity:</span> <span class="ruby-value">1</span>}
+</pre>
+
+<p>} @keyframes empty {</p>
+
+<pre class="ruby"><span class="ruby-value">0</span><span class="ruby-operator">%</span> {<span class="ruby-value">opacity:</span> <span class="ruby-value">1</span>}
+</pre>
+
+<p>} @-webkit-keyframes fadeIn {</p>
+
+<pre>0% { opacity:0; }
+100% { opacity:1; }</pre>
+
+<p>} @-moz-keyframes fadeIn {</p>
+
+<pre>0% { opacity:0; }
+100% { opacity:1; }</pre>
+
+<p>} @keyframes fadeIn {</p>
+
+<pre>0% { opacity:0; }
+100% { opacity:1; }</pre>
+
+<p>} @-webkit-keyframes fadeOut {</p>
+
+<pre>0% { opacity:1; }
+100% { opacity:0; }</pre>
+
+<p>} @-moz-keyframes fadeOut {</p>
+
+<pre>0% { opacity:1; }
+100% { opacity:0; }</pre>
+
+<p>} @keyframes fadeOut {</p>
+
+<pre>0% { opacity:1; }
+100% { opacity:0; }</pre>
+
+<p>} @-webkit-keyframes backSlideOut {</p>
+
+<pre>25% { opacity: .5; -webkit-transform: translateZ(-500px); }
+75% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+100% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }</pre>
+
+<p>} @-moz-keyframes backSlideOut {</p>
+
+<pre>25% { opacity: .5; -moz-transform: translateZ(-500px); }
+75% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+100% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }</pre>
+
+<p>} @keyframes backSlideOut {</p>
+
+<pre>25% { opacity: .5; transform: translateZ(-500px); }
+75% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+100% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }</pre>
+
+<p>} @-webkit-keyframes backSlideIn {</p>
+
+<pre>0%, 25% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(200%); }
+75% { opacity: .5; -webkit-transform: translateZ(-500px); }
+100% { opacity: 1; -webkit-transform: translateZ(0) translateX(0); }</pre>
+
+<p>} @-moz-keyframes backSlideIn {</p>
+
+<pre>0%, 25% { opacity: .5; -moz-transform: translateZ(-500px) translateX(200%); }
+75% { opacity: .5; -moz-transform: translateZ(-500px); }
+100% { opacity: 1; -moz-transform: translateZ(0) translateX(0); }</pre>
+
+<p>} @keyframes backSlideIn {</p>
+
+<pre>0%, 25% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
+75% { opacity: .5; transform: translateZ(-500px); }
+100% { opacity: 1; transform: translateZ(0) translateX(0); }</pre>
+
+<p>} @-webkit-keyframes scaleToFade {</p>
+
+<pre>to { opacity: 0; -webkit-transform: scale(.8); }</pre>
+
+<p>} @-moz-keyframes scaleToFade {</p>
+
+<pre>to { opacity: 0; -moz-transform: scale(.8); }</pre>
+
+<p>} @keyframes scaleToFade {</p>
+
+<pre>to { opacity: 0; transform: scale(.8); }</pre>
+
+<p>} @-webkit-keyframes goDown {</p>
+
+<pre>from { -webkit-transform: translateY(-100%); }</pre>
+
+<p>} @-moz-keyframes goDown {</p>
+
+<pre>from { -moz-transform: translateY(-100%); }</pre>
+
+<p>} @keyframes goDown {</p>
+
+<pre>from { transform: translateY(-100%); }</pre>
+
+<p>}</p>
+
+<p>@-webkit-keyframes scaleUpFrom {</p>
+
+<pre>from { opacity: 0; -webkit-transform: scale(1.5); }</pre>
+
+<p>} @-moz-keyframes scaleUpFrom {</p>
+
+<pre>from { opacity: 0; -moz-transform: scale(1.5); }</pre>
+
+<p>} @keyframes scaleUpFrom {</p>
+
+<pre>from { opacity: 0; transform: scale(1.5); }</pre>
+
+<p>}</p>
+
+<p>@-webkit-keyframes scaleUpTo {</p>
+
+<pre>to { opacity: 0; -webkit-transform: scale(1.5); }</pre>
+
+<p>} @-moz-keyframes scaleUpTo {</p>
+
+<pre>to { opacity: 0; -moz-transform: scale(1.5); }</pre>
+
+<p>} @keyframes scaleUpTo {</p>
+
+<pre>to { opacity: 0; transform: scale(1.5); }</pre>
+
+<p>} /<strong>—-responsive-mediaquries—–</strong>/ @media (max-width:1024px){</p>
+
+<pre>#owl-demo .item img {
+        width: 90%;
+}</pre>
+
+<p>} @media (max-width:768px){ .owl-carousel .owl-wrapper-outer {</p>
+
+<pre>margin: 0 auto;
+}
+.owl-carousel {
+width: 100% !important;
+}
+.owl-pagination {
+right: 46% ;
+bottom: 0px ;
+}
+#owl-demo2 {
+
+        margin: 0 auto;
+}
+div#owl-demo3 {
+        margin: 0 auto;
+}
+.owl-carousel1 div.owl-pagination {
+        top: 152px;
+        right: 45%;
+}</pre>
+
+<p>} @media (max-width:640px){</p>
+
+<pre>.owl-carousel {
+        width: 78%;
+}
+.owl-pagination {
+        right: -15%;
+right: 43%;
+}
+#owl-demo2 {
+        /*padding: 2em 0 0 0;*/
+        margin: 0 auto;
+}
+div#owl-demo3 {
+        margin: 0 auto;
+        width: 100%;
+}
+.owl-carousel1 div.owl-pagination {
+        top: 152px;
+        right: 45%;
+}
+.owl-carousel2 div.owl-pagination {
+        right: -9%;
+        top: 84px;
+}</pre>
+
+<p>} @media (max-width:480px){</p>
+
+<pre>.owl-carousel {
+        width: 78%;
+}
+.owl-pagination {
+        bottom:-15px;
+}
+#owl-demo2 {
+        padding: 1em 0 0 0;
+        margin: 0 auto;
+}
+div#owl-demo3 {
+        margin: 0 auto;
+        width: 100%;
+}
+.owl-carousel1 div.owl-pagination {
+        top: 152px;
+        right: 45%;
+}
+.owl-carousel2 div.owl-pagination {
+        right: -9%;
+        top: 84px;
+}</pre>
+
+<p>} @media(max-width:414px){ .owl-pagination {</p>
+
+<pre>bottom: 23px;</pre>
+
+<p>} .owl-pagination {</p>
+
+<pre>bottom: -39px;
+right: 32%;</pre>
+
+<p>} } @media (max-width:320px){</p>
+
+<pre>.owl-carousel {
+        width: 78%;
+}</pre>
+
+<p>}</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.4.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
