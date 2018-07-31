@@ -1,5 +1,7 @@
 class SoccerCourtsController < ApplicationController
   before_action :set_soccer_court, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  before_action :authenticate_admin!, only: [:destroy]
   layout "reservas"
   # GET /soccer_courts
   # GET /soccer_courts.json

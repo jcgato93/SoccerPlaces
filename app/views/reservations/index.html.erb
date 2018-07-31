@@ -1,33 +1,32 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Reservations</h1>
+    <!--Full calendar-->
+    <link rel='stylesheet' href='/fullcalendar/fullcalendar.css' />
+    <script src='/fullcalendar/lib/jquery.min.js'></script>
+    <script src='/fullcalendar/lib/moment.min.js'></script>
+    <script src='/fullcalendar/fullcalendar.js'></script>
+    <script src='/fullcalendar/lib/jquery-ui.min.js'></script>
 
-<table class="table table-responsive table-bordered table-striped table-hover">
-  <thead>
-    <tr>
-      <th>Dateofreservation</th>
-      <th>Timeofreservation</th>
-      <th>Isactive</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <script src="/JS/Reservations/index.js"></script>
 
-  <tbody>
-    <% @reservations.each do |reservation| %>
-      <tr>
-        <td><%= reservation.dateOfReservation %></td>
-        <td><%= reservation.timeOfReservation %></td>
-        <td><%= reservation.isActive %></td>
-        <td><%= reservation.price %></td>
-        <td><%= link_to 'Show', reservation,class: "btn btn-default" %></td>
-        <td><%= link_to 'Edit', edit_reservation_path(reservation),class: "btn btn-info" %></td>
-        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger" %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+  font-size: 14px;
+}
+#calendar {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 10px;
+}
 
-<br>
 
-<%= link_to 'New Reservation', new_reservation_path, class: "btn btn-success" %>
+</style>
+
+
+
+<div id='calendar'></div>
+
+

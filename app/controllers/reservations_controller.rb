@@ -1,11 +1,30 @@
 class ReservationsController < ApplicationController
-  before_action :set_reservation, only: [:show, :edit, :update, :destroy]
+  before_action :set_reservation, only: [:show, :edit, :update, :destroys]
+  before_action :authenticate_user!, except: [:getreservations]
+  
+  before_action :authenticate_admin!, only: [:destroy]
   layout "reservas"
+
+
+
+
   # GET /reservations
   # GET /reservations.json
   # Mostrar todos los registros de las reservas
   def index
-    @reservations = Reservation.all
+    #@reservations = Reservation.all
+    # @test= SoccerCourt.includes(:reservation).find(params[:soccer_court_id])
+    
+    @soccer_court_id= params[:soccer_court_id]
+  end
+
+  # GET /reservations/getReservations/get
+  def getreservations
+    byebug
+    soccer_court_id= params[:id].to_i
+    date=params[:date]
+    @reservations= Reservation.where(soccer_court_id: soccer_court_id, isActive: true, dateOfReservation: date)
+    render json: @reservations
   end
 
   # GET /reservations/1
@@ -18,6 +37,8 @@ class ReservationsController < ApplicationController
   def new
     @reservation = Reservation.new
     @soccer_court_id = params[:soccer_court_id]
+    date=params[:date]
+    @reservations= Reservation.where(soccer_court_id: @soccer_court_id, isActive: true, dateOfReservation: date)
   end
 
   # GET /reservations/1/edit
@@ -76,6 +97,6 @@ class ReservationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reservation_params
-      params.require(:reservation).permit(:dateOfReservation, :timeOfReservation, :isActive, :price, :user_id, :soccer_court_id)
+      params.require(:reservation).permit(:dateOfReservation, :timeOfReservation, :isActive, :price, :user_id, :soccer_court_id, :date)
     end
 end
