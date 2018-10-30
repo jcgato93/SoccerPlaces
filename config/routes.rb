@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   root :to => 'home#index'
 
   get "/reservations/getreservations/get", :to => 'reservations#getreservations'
+  get "/reservations/getreservations/getMisReservas", :to => 'reservations#getMisReservas'
 end

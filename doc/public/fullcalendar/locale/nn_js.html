@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>nn.js - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+  var index_rel_prefix = "../../../";
+</script>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/darkfish.js"></script>
+
+<link href="../../../css/fonts.css" rel="stylesheet">
+<link href="../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../../README_md.html">README</a>
+  
+    <li><a href="../../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../../app/assets/config/manifest_js.html">manifest.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/cable_js.html">cable.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/home_coffee.html">home.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/reservations_coffee.html">reservations.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/rols_coffee.html">rols.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/soccer_courts_coffee.html">soccer_courts.coffee</a>
+  
+    <li><a href="../../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../../app/assets/stylesheets/home_scss.html">home.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/reservations_scss.html">reservations.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/rols_scss.html">rols.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/scaffolds_scss.html">scaffolds.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/soccer_courts_scss.html">soccer_courts.scss</a>
+  
+    <li><a href="../../../app/views/reservations/_reservation_json_jbuilder.html">_reservation.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/reservations/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/reservations/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/rols/_rol_json_jbuilder.html">_rol.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/rols/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/rols/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/soccer_courts/_soccer_court_json_jbuilder.html">_soccer_court.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/soccer_courts/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/soccer_courts/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../../log/development_log.html">development.log</a>
+  
+    <li><a href="../../../package_json.html">package.json</a>
+  
+    <li><a href="../../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap_css.html">dataTables.bootstrap.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap_min_css.html">dataTables.bootstrap.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap4_css.html">dataTables.bootstrap4.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap4_min_css.html">dataTables.bootstrap4.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_foundation_css.html">dataTables.foundation.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_foundation_min_css.html">dataTables.foundation.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_jqueryui_css.html">dataTables.jqueryui.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_jqueryui_min_css.html">dataTables.jqueryui.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_semanticui_css.html">dataTables.semanticui.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/dataTables_semanticui_min_css.html">dataTables.semanticui.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/jquery_dataTables_css.html">jquery.dataTables.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/css/jquery_dataTables_min_css.html">jquery.dataTables.min.css</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap_js.html">dataTables.bootstrap.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap_min_js.html">dataTables.bootstrap.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap4_js.html">dataTables.bootstrap4.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap4_min_js.html">dataTables.bootstrap4.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_foundation_js.html">dataTables.foundation.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_foundation_min_js.html">dataTables.foundation.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_jqueryui_js.html">dataTables.jqueryui.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_jqueryui_min_js.html">dataTables.jqueryui.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_semanticui_js.html">dataTables.semanticui.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/dataTables_semanticui_min_js.html">dataTables.semanticui.min.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/jquery_dataTables_js.html">jquery.dataTables.js</a>
+  
+    <li><a href="../../../public/DataTables/DataTables-1_10_18/js/jquery_dataTables_min_js.html">jquery.dataTables.min.js</a>
+  
+    <li><a href="../../../public/DataTables/datatables_css.html">datatables.css</a>
+  
+    <li><a href="../../../public/DataTables/datatables_js.html">datatables.js</a>
+  
+    <li><a href="../../../public/DataTables/datatables_min_css.html">datatables.min.css</a>
+  
+    <li><a href="../../../public/DataTables/datatables_min_js.html">datatables.min.js</a>
+  
+    <li><a href="../../../public/Home Page/css/JiSlider_css.html">JiSlider.css</a>
+  
+    <li><a href="../../../public/Home Page/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../../public/Home Page/css/font-awesome_css.html">font-awesome.css</a>
+  
+    <li><a href="../../../public/Home Page/css/lightbox_css.html">lightbox.css</a>
+  
+    <li><a href="../../../public/Home Page/css/owl_carousel_css.html">owl.carousel.css</a>
+  
+    <li><a href="../../../public/Home Page/css/style_css.html">style.css</a>
+  
+    <li><a href="../../../public/Home Page/index_html.html">index.html</a>
+  
+    <li><a href="../../../public/Home Page/js/JiSlider_js.html">JiSlider.js</a>
+  
+    <li><a href="../../../public/Home Page/js/SmoothScroll_min_js.html">SmoothScroll.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../../public/Home Page/js/easing_js.html">easing.js</a>
+  
+    <li><a href="../../../public/Home Page/js/index_js.html">index.js</a>
+  
+    <li><a href="../../../public/Home Page/js/jquery-2_1_4_min_js.html">jquery-2.1.4.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/jquery_countup_js.html">jquery.countup.js</a>
+  
+    <li><a href="../../../public/Home Page/js/jquery_waypoints_min_js.html">jquery.waypoints.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/lightbox-plus-jquery_min_js.html">lightbox-plus-jquery.min.js</a>
+  
+    <li><a href="../../../public/Home Page/js/moment-timezone-with-data_js.html">moment-timezone-with-data.js</a>
+  
+    <li><a href="../../../public/Home Page/js/moment_js.html">moment.js</a>
+  
+    <li><a href="../../../public/Home Page/js/move-top_js.html">move-top.js</a>
+  
+    <li><a href="../../../public/Home Page/js/owl_carousel_js.html">owl.carousel.js</a>
+  
+    <li><a href="../../../public/Home Page/js/timer_js.html">timer.js</a>
+  
+    <li><a href="../../../public/JS/Reservations/index_js.html">index.js</a>
+  
+    <li><a href="../../../public/JS/SoccerCourts/index_js.html">index.js</a>
+  
+    <li><a href="../../../public/Login/css/style_css.html">style.css</a>
+  
+    <li><a href="../../../public/Login/index_html.html">index.html</a>
+  
+    <li><a href="../../../public/Login/js/easyResponsiveTabs_js.html">easyResponsiveTabs.js</a>
+  
+    <li><a href="../../../public/Login/js/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../../public/apple-touch-icon-precomposed_png.html">apple-touch-icon-precomposed.png</a>
+  
+    <li><a href="../../../public/apple-touch-icon_png.html">apple-touch-icon.png</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_css.html">bootstrap-theme.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_css_map.html">bootstrap-theme.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_min_css.html">bootstrap-theme.min.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap-theme_min_css_map.html">bootstrap-theme.min.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_css_map.html">bootstrap.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_min_css.html">bootstrap.min.css</a>
+  
+    <li><a href="../../../public/bootstrap/css/bootstrap_min_css_map.html">bootstrap.min.css.map</a>
+  
+    <li><a href="../../../public/bootstrap/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../../public/bootstrap/js/bootstrap_min_js.html">bootstrap.min.js</a>
+  
+    <li><a href="../../../public/bootstrap/js/npm_js.html">npm.js</a>
+  
+    <li><a href="../../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../../../public/fullcalendar/CHANGELOG_txt.html">CHANGELOG</a>
+  
+    <li><a href="../../../public/fullcalendar/CONTRIBUTING_txt.html">CONTRIBUTING</a>
+  
+    <li><a href="../../../public/fullcalendar/LICENSE_txt.html">LICENSE</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/agenda-views_html.html">agenda-views.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/background-events_html.html">background-events.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/basic-views_html.html">basic-views.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/default_html.html">default.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/external-dragging_html.html">external-dragging.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/gcal_html.html">gcal.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/js/theme-chooser_js.html">theme-chooser.js</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/json_html.html">json.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/json/events_json.html">events.json</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/list-views_html.html">list-views.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/locales_html.html">locales.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/php/get-events_php.html">get-events.php</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/php/get-timezones_php.html">get-timezones.php</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/php/utils_php.html">utils.php</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/selectable_html.html">selectable.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/themes_html.html">themes.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/timezones_html.html">timezones.html</a>
+  
+    <li><a href="../../../public/fullcalendar/demos/week-numbers_html.html">week-numbers.html</a>
+  
+    <li><a href="../../../public/fullcalendar/fullcalendar_css.html">fullcalendar.css</a>
+  
+    <li><a href="../../../public/fullcalendar/fullcalendar_js.html">fullcalendar.js</a>
+  
+    <li><a href="../../../public/fullcalendar/fullcalendar_min_css.html">fullcalendar.min.css</a>
+  
+    <li><a href="../../../public/fullcalendar/fullcalendar_min_js.html">fullcalendar.min.js</a>
+  
+    <li><a href="../../../public/fullcalendar/fullcalendar_print_css.html">fullcalendar.print.css</a>
+  
+    <li><a href="../../../public/fullcalendar/fullcalendar_print_min_css.html">fullcalendar.print.min.css</a>
+  
+    <li><a href="../../../public/fullcalendar/gcal_js.html">gcal.js</a>
+  
+    <li><a href="../../../public/fullcalendar/gcal_min_js.html">gcal.min.js</a>
+  
+    <li><a href="../../../public/fullcalendar/lib/jquery-ui_min_js.html">jquery-ui.min.js</a>
+  
+    <li><a href="../../../public/fullcalendar/lib/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../../public/fullcalendar/lib/moment_min_js.html">moment.min.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale-all_js.html">locale-all.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/af_js.html">af.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ar-dz_js.html">ar-dz.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ar-kw_js.html">ar-kw.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ar-ly_js.html">ar-ly.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ar-ma_js.html">ar-ma.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ar-sa_js.html">ar-sa.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ar-tn_js.html">ar-tn.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ar_js.html">ar.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/bg_js.html">bg.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/bs_js.html">bs.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ca_js.html">ca.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/cs_js.html">cs.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/da_js.html">da.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/de-at_js.html">de-at.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/de-ch_js.html">de-ch.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/de_js.html">de.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/el_js.html">el.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/en-au_js.html">en-au.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/en-ca_js.html">en-ca.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/en-gb_js.html">en-gb.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/en-ie_js.html">en-ie.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/en-nz_js.html">en-nz.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/es-do_js.html">es-do.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/es-us_js.html">es-us.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/es_js.html">es.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/et_js.html">et.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/eu_js.html">eu.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/fa_js.html">fa.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/fi_js.html">fi.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/fr-ca_js.html">fr-ca.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/fr-ch_js.html">fr-ch.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/fr_js.html">fr.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/gl_js.html">gl.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/he_js.html">he.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/hi_js.html">hi.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/hr_js.html">hr.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/hu_js.html">hu.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/id_js.html">id.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/is_js.html">is.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/it_js.html">it.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ja_js.html">ja.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ka_js.html">ka.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/kk_js.html">kk.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ko_js.html">ko.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/lb_js.html">lb.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/lt_js.html">lt.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/lv_js.html">lv.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/mk_js.html">mk.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ms-my_js.html">ms-my.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ms_js.html">ms.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/nb_js.html">nb.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/nl-be_js.html">nl-be.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/nl_js.html">nl.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/nn_js.html">nn.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/pl_js.html">pl.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/pt-br_js.html">pt-br.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/pt_js.html">pt.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ro_js.html">ro.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/ru_js.html">ru.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/sk_js.html">sk.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/sl_js.html">sl.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/sq_js.html">sq.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/sr-cyrl_js.html">sr-cyrl.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/sr_js.html">sr.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/sv_js.html">sv.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/th_js.html">th.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/tr_js.html">tr.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/uk_js.html">uk.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/vi_js.html">vi.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/zh-cn_js.html">zh-cn.js</a>
+  
+    <li><a href="../../../public/fullcalendar/locale/zh-tw_js.html">zh-tw.js</a>
+  
+    <li><a href="../../../public/jquery-3_3_1_min_js.html">jquery-3.3.1.min.js</a>
+  
+    <li><a href="../../../public/robots_txt.html">robots</a>
+  
+    <li><a href="../../../tmp/restart_txt.html">restart</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page public/fullcalendar/locale/nn.js">
+
+<p>!function(e,n){“object”==typeof exports&amp;&amp;“object”==typeof
+module?module.exports=n(require(“moment”),require(“fullcalendar”)):“function”==typeof
+<a
+href=""moment","fullcalendar"">define&&define.amd?define(</a>,n):“object”==typeof
+exports?n(require(“moment”),require(“fullcalendar”)):n(e.moment,e.FullCalendar)}(“undefined”!=typeof
+self?self:this,function(e,n){return function(e){function n(a){<a
+href="a">if(t</a>)return <a href="a">t</a>.exports;var <a
+href="a">r=t</a>={i:a,l:!1,exports:{}};return <a
+href="a">e</a>.call(r.exports,r,r.exports,n),r.l=!0,r.exports}var
+t={};return
+n.m=e,n.c=t,n.d=function(e,t,a){n.o(e,t)||Object.defineProperty(e,t,{configurable:!1,enumerable:!0,get:a})},n.n=function(e){var
+t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return
+e};return n.d(t,“a”,t),t},n.o=function(e,n){return
+Object.prototype.hasOwnProperty.call(e,n)},n.p=“”,n(n.s=171)}({0:function(n,t){n.exports=e},1:function(e,t){e.exports=n},171:function(e,n,t){Object.defineProperty(n,“__esModule”,{value:!0}),t(172);var
+a=t(1);a.datepickerLocale(“nn”,“nn”,{closeText:“Lukk”,prevText:“&amp;#xAB;Førre”,nextText:“Neste&amp;#xBB;”,currentText:“I
+<a
+href=""januar","februar","mars","april","mai","juni","juli","august","september","oktober","november","desember"">dag”,monthNames:</a>,<a
+href=""jan","feb","mar","apr","mai","jun","jul","aug","sep","okt","nov","des"">monthNamesShort:</a>,<a
+href=""sun","mån","tys","ons","tor","fre","lau"">dayNamesShort:</a>,<a
+href=""sundag","måndag","tysdag","onsdag","torsdag","fredag","laurdag"">dayNames:</a>,<a
+href=""su","må","ty","on","to","fr","la"">dayNamesMin:</a>,weekHeader:“Veke”,dateFormat:“dd.mm.yy”,firstDay:1,isRTL:!1,showMonthAfterYear:!1,yearSuffix:“”}),a.locale(“nn”,{buttonText:{month:“Månad”,week:“Veke”,day:“Dag”,list:“Agenda”},allDayText:“Heile
+dagen”,eventLimitText:“til”,noEventsMessage:“Ingen hendelser å
+vise”})},172:function(e,n,t){!function(e,n){n(t(0))}(0,function(e){return
+e.defineLocale(“nn”,{months:“januar_februar_mars_april_mai_juni_juli_august_september_oktober_november_desember”.split(“_”),monthsShort:“jan_feb_mar_apr_mai_jun_jul_aug_sep_okt_nov_des”.split(“_”),weekdays:“sundag_måndag_tysdag_onsdag_torsdag_fredag_laurdag”.split(“_”),weekdaysShort:“sun_mån_tys_ons_tor_fre_lau”.split(“_”),weekdaysMin:“su_må_ty_on_to_fr_lø”.split(“_”),longDateFormat:{LT:“HH:mm”,LTS:“HH:mm:ss”,L:“DD.MM.YYYY”,LL:“D.
+MMMM YYYY”,LLL:“D. MMMM YYYY [kl.] H:mm”,LLLL:“dddd D. MMMM YYYY [kl.]
+HH:mm”},calendar:{sameDay:“[I dag klokka] LT”,nextDay:“[I morgon klokka]
+LT”,nextWeek:“dddd [klokka] LT”,lastDay:“[I går klokka] <a
+href="Føregåande">LT”,lastWeek:“</a> dddd [klokka]
+LT”,sameElse:“L”},relativeTime:{future:“om %s”,past:“%s sidan”,s:“nokre
+sekund”,ss:“%d sekund”,m:“eit minutt”,mm:“%d minutt”,h:“ein time”,hh:“%d
+timar”,d:“ein dag”,dd:“%d dagar”,M:“ein månad”,MM:“%d månader”,y:“eit
+år”,yy:“%d
+år”},dayOfMonthOrdinalParse:/d{1,2}./,ordinal:“%d.”,week:{dow:1,doy:4}})})}})});</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.4.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

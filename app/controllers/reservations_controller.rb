@@ -10,25 +10,34 @@ class ReservationsController < ApplicationController
 
   # GET /reservations
   # GET /reservations.json
-  # Mostrar todos los registros de las reservas
+  # Retornar las vista index junto con todos los registros de las reservas
   def index
-    #@reservations = Reservation.all
+    @reservations = Reservation.all
     # @test= SoccerCourt.includes(:reservation).find(params[:soccer_court_id])
-    
+    byebug
     @soccer_court_id= params[:soccer_court_id]
   end
 
   # GET /reservations/getReservations/get
+  # Retorna las reservas pertenecientes a una cancha y fecha especificadas
   def getreservations
     byebug
     soccer_court_id= params[:id].to_i
     date=params[:date]
+    byebug
     @reservations= Reservation.where(soccer_court_id: soccer_court_id, isActive: true, dateOfReservation: date)
     render json: @reservations
   end
 
+  # POST /reservations/getReservations/misReservas
+  # Retorna la vista de las reservas activas de un usuario
+  def getMisReservas
+    render "MisReservas"
+  end
+
   # GET /reservations/1
   # GET /reservations/1.json
+  # Retorna la vista show
   def show
   end
 
@@ -38,18 +47,24 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.new
     @soccer_court_id = params[:soccer_court_id]
     date=params[:date]
-    @reservations= Reservation.where(soccer_court_id: @soccer_court_id, isActive: true, dateOfReservation: date)
+  
+    @reservations= Reservation.where(soccer_court_id: @soccer_court_id, isActive: true, dateOfReservation: date)        
   end
 
   # GET /reservations/1/edit
+  # Retorna la vista de edit
   def edit
   end
 
   # POST /reservations
   # POST /reservations.json
+  # Registra una nueva reserva y envia un correo
+  # de notificacion al usuario
   def create
     @reservation = Reservation.new(reservation_params)
 
+    # @reservation.timeOfReservation=@reservation.timeOfReservation.strftime('%H')
+    byebug
     respond_to do |format|
       if @reservation.save
         @reservation= Reservation.last
@@ -67,6 +82,7 @@ class ReservationsController < ApplicationController
 
   # PATCH/PUT /reservations/1
   # PATCH/PUT /reservations/1.json
+  # Actualiza una reserva
   def update
     respond_to do |format|
       if @reservation.update(reservation_params)
@@ -81,6 +97,7 @@ class ReservationsController < ApplicationController
 
   # DELETE /reservations/1
   # DELETE /reservations/1.json
+  # Elinima una reserva
   def destroy
     @reservation.destroy
     respond_to do |format|
@@ -90,12 +107,12 @@ class ReservationsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    # Usa los callbacks para compartir la configuración común o las restricciones entre las acciones.
     def set_reservation
       @reservation = Reservation.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+    # Especifica los parametros permitidos en las peticiones
     def reservation_params
       params.require(:reservation).permit(:dateOfReservation, :timeOfReservation, :isActive, :price, :user_id, :soccer_court_id, :date)
     end

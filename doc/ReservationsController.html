@@ -77,6 +77,10 @@
     
     <li ><a href="#method-i-edit">#edit</a>
     
+    <li ><a href="#method-i-getMisReservas">#getMisReservas</a>
+    
+    <li ><a href="#method-i-getreservations">#getreservations</a>
+    
     <li ><a href="#method-i-index">#index</a>
     
     <li ><a href="#method-i-new">#new</a>
@@ -130,16 +134,19 @@
 
         <div class="method-description">
           
-          <p>POST /reservations POST /reservations.json</p>
+          <p>POST /reservations POST /reservations.json Registra una nueva reserva y
+envia un correo de notificacion al usuario</p>
           
           
 
           
           <div class="method-source-code" id="create-source">
-            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 29</span>
+            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 63</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">create</span>
   <span class="ruby-ivar">@reservation</span> = <span class="ruby-constant">Reservation</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">reservation_params</span>)
 
+  <span class="ruby-comment"># @reservation.timeOfReservation=@reservation.timeOfReservation.strftime(&#39;%H&#39;)</span>
+  <span class="ruby-identifier">byebug</span>
   <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
     <span class="ruby-keyword">if</span> <span class="ruby-ivar">@reservation</span>.<span class="ruby-identifier">save</span>
       <span class="ruby-ivar">@reservation</span>= <span class="ruby-constant">Reservation</span>.<span class="ruby-identifier">last</span>
@@ -177,13 +184,13 @@
 
         <div class="method-description">
           
-          <p>DELETE /reservations/1 DELETE /reservations/1.json</p>
+          <p>DELETE /reservations/1 DELETE /reservations/1.json Elinima una reserva</p>
           
           
 
           
           <div class="method-source-code" id="destroy-source">
-            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 63</span>
+            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 101</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">destroy</span>
   <span class="ruby-ivar">@reservation</span>.<span class="ruby-identifier">destroy</span>
   <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
@@ -214,14 +221,86 @@
 
         <div class="method-description">
           
-          <p>GET /reservations/1/edit</p>
+          <p>GET /reservations/1/edit Retorna la vista de edit</p>
           
           
 
           
           <div class="method-source-code" id="edit-source">
-            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 24</span>
+            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 56</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">edit</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getMisReservas" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getMisReservas</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /reservations/getReservations/misReservas Retorna la vista de las
+reservas activas de un usuario</p>
+          
+          
+
+          
+          <div class="method-source-code" id="getMisReservas-source">
+            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">getMisReservas</span>
+  <span class="ruby-identifier">render</span> <span class="ruby-string">&quot;MisReservas&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getreservations" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getreservations</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /reservations/getReservations/get Retorna las reservas pertenecientes a
+una cancha y fecha especificadas</p>
+          
+          
+
+          
+          <div class="method-source-code" id="getreservations-source">
+            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">getreservations</span>
+  <span class="ruby-identifier">byebug</span>
+  <span class="ruby-identifier">soccer_court_id</span>= <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>].<span class="ruby-identifier">to_i</span>
+  <span class="ruby-identifier">date</span>=<span class="ruby-identifier">params</span>[<span class="ruby-value">:date</span>]
+  <span class="ruby-ivar">@reservations</span>= <span class="ruby-constant">Reservation</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">soccer_court_id:</span> <span class="ruby-identifier">soccer_court_id</span>, <span class="ruby-value">isActive:</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">dateOfReservation:</span> <span class="ruby-identifier">date</span>)
+  <span class="ruby-identifier">render</span> <span class="ruby-value">json:</span> <span class="ruby-ivar">@reservations</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -246,16 +325,19 @@
 
         <div class="method-description">
           
-          <p>GET /reservations GET /reservations.json Mostrar todos los registros de las
-reservas</p>
+          <p>GET /reservations GET /reservations.json Retornar las vista index junto con
+todos los registros de las reservas</p>
           
           
 
           
           <div class="method-source-code" id="index-source">
-            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 7</span>
+            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 14</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">index</span>
-  <span class="ruby-ivar">@reservations</span> = <span class="ruby-constant">Reservation</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-comment">#@reservations = Reservation.all</span>
+  <span class="ruby-comment"># @test= SoccerCourt.includes(:reservation).find(params[:soccer_court_id])</span>
+  
+  <span class="ruby-ivar">@soccer_court_id</span>= <span class="ruby-identifier">params</span>[<span class="ruby-value">:soccer_court_id</span>]
 <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -286,10 +368,14 @@ reservas</p>
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 18</span>
+            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 45</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">new</span>
   <span class="ruby-ivar">@reservation</span> = <span class="ruby-constant">Reservation</span>.<span class="ruby-identifier">new</span>
   <span class="ruby-ivar">@soccer_court_id</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:soccer_court_id</span>]
+  <span class="ruby-identifier">date</span>=<span class="ruby-identifier">params</span>[<span class="ruby-value">:date</span>]
+
+  <span class="ruby-ivar">@reservations</span>= <span class="ruby-constant">Reservation</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">soccer_court_id:</span> <span class="ruby-ivar">@soccer_court_id</span>, <span class="ruby-value">isActive:</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">dateOfReservation:</span> <span class="ruby-identifier">date</span>)    
+  <span class="ruby-identifier">byebug</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -314,13 +400,13 @@ reservas</p>
 
         <div class="method-description">
           
-          <p>GET /reservations/1 GET /reservations/1.json</p>
+          <p>GET /reservations/1 GET /reservations/1.json Retorna la vista show</p>
           
           
 
           
           <div class="method-source-code" id="show-source">
-            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 13</span>
+            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 40</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">show</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -346,13 +432,14 @@ reservas</p>
 
         <div class="method-description">
           
-          <p>PATCH/PUT /reservations/1 PATCH/PUT /reservations/1.json</p>
+          <p>PATCH/PUT /reservations/1 PATCH/PUT /reservations/1.json Actualiza una
+reserva</p>
           
           
 
           
           <div class="method-source-code" id="update-source">
-            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 49</span>
+            <pre><span class="ruby-comment"># File app/controllers/reservations_controller.rb, line 86</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">update</span>
   <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
     <span class="ruby-keyword">if</span> <span class="ruby-ivar">@reservation</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">reservation_params</span>)

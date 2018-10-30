@@ -65,7 +65,19 @@
 
     
     
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
     
+    <li ><a href="#method-i-authenticate_admin-21">#authenticate_admin!</a>
+    
+    <li ><a href="#method-i-authenticate_normal-21">#authenticate_normal!</a>
+    
+  </ul>
+</div>
+
   </div>
 </nav>
 
@@ -89,6 +101,80 @@
     
 
     
+     <section id="protected-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Protected Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-authenticate_admin-21" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">authenticate_admin!</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verifica si el nivel de acceso de un usuario es de administrador</p>
+          
+          
+
+          
+          <div class="method-source-code" id="authenticate_admin-21-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">authenticate_admin!</span>
+  <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">root_path</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">user_signed_in?</span> <span class="ruby-operator">&amp;&amp;</span>  <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">is_admin?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-authenticate_normal-21" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">authenticate_normal!</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verifica si el nivel de acceso de un usuario es normal</p>
+          
+          
+
+          
+          <div class="method-source-code" id="authenticate_normal-21-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">authenticate_normal!</span>
+  <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">root_path</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">user_signed_in?</span> <span class="ruby-operator">&amp;&amp;</span>  <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">is_normal_user?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
   </section>
 </main>
 

@@ -10,7 +10,9 @@
       </ul>
     </div>
   <% end %>
-
+  <br />
+  <br />
+  <br />
   <div class="field" style="display:none">
     <label>Usuario</label>
     <input type="Text" name="reservation[user_id]" value="<%= current_user.id%>" />
@@ -23,12 +25,12 @@
 
   <div class="field">
     <%= form.label :dateOfReservation %>
-    <%= form.date_select :dateOfReservation, id: :reservation_dateOfReservation %>
+    <%= form.date_select :dateOfReservation, id: :reservation_dateOfReservation, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :timeOfReservation %>
-    <%= form.time_select :timeOfReservation, id: :reservation_timeOfReservation %>
+    <%= form.time_select :timeOfReservation, { :discard_minute => true, id: :reservation_timeOfReservation } %>
   </div>
 
   <div class="field">
@@ -38,10 +40,10 @@
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.text_field :price, id: :reservation_price %>
+    <%= form.text_field :price, id: :reservation_price, class: "form-control", style: "width:300px;" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions" style="margin-top:2em;" >
+    <%= form.submit 'Guardar', :class => 'btn btn-lg btn-success'  %>
   </div>
 <% end %>

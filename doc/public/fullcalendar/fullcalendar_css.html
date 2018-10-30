@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>fullcalendar.css - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+  var index_rel_prefix = "../../";
+</script>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/darkfish.js"></script>
+
+<link href="../../css/fonts.css" rel="stylesheet">
+<link href="../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../README_md.html">README</a>
+  
+    <li><a href="../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../app/assets/config/manifest_js.html">manifest.js</a>
+  
+    <li><a href="../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../app/assets/javascripts/cable_js.html">cable.js</a>
+  
+    <li><a href="../../app/assets/javascripts/home_coffee.html">home.coffee</a>
+  
+    <li><a href="../../app/assets/javascripts/reservations_coffee.html">reservations.coffee</a>
+  
+    <li><a href="../../app/assets/javascripts/rols_coffee.html">rols.coffee</a>
+  
+    <li><a href="../../app/assets/javascripts/soccer_courts_coffee.html">soccer_courts.coffee</a>
+  
+    <li><a href="../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../app/assets/stylesheets/home_scss.html">home.scss</a>
+  
+    <li><a href="../../app/assets/stylesheets/reservations_scss.html">reservations.scss</a>
+  
+    <li><a href="../../app/assets/stylesheets/rols_scss.html">rols.scss</a>
+  
+    <li><a href="../../app/assets/stylesheets/scaffolds_scss.html">scaffolds.scss</a>
+  
+    <li><a href="../../app/assets/stylesheets/soccer_courts_scss.html">soccer_courts.scss</a>
+  
+    <li><a href="../../app/views/reservations/_reservation_json_jbuilder.html">_reservation.json.jbuilder</a>
+  
+    <li><a href="../../app/views/reservations/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../app/views/reservations/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../app/views/rols/_rol_json_jbuilder.html">_rol.json.jbuilder</a>
+  
+    <li><a href="../../app/views/rols/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../app/views/rols/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../app/views/soccer_courts/_soccer_court_json_jbuilder.html">_soccer_court.json.jbuilder</a>
+  
+    <li><a href="../../app/views/soccer_courts/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../app/views/soccer_courts/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../log/development_log.html">development.log</a>
+  
+    <li><a href="../../package_json.html">package.json</a>
+  
+    <li><a href="../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap_css.html">dataTables.bootstrap.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap_min_css.html">dataTables.bootstrap.min.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap4_css.html">dataTables.bootstrap4.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/dataTables_bootstrap4_min_css.html">dataTables.bootstrap4.min.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/dataTables_foundation_css.html">dataTables.foundation.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/dataTables_foundation_min_css.html">dataTables.foundation.min.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/dataTables_jqueryui_css.html">dataTables.jqueryui.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/dataTables_jqueryui_min_css.html">dataTables.jqueryui.min.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/dataTables_semanticui_css.html">dataTables.semanticui.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/dataTables_semanticui_min_css.html">dataTables.semanticui.min.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/jquery_dataTables_css.html">jquery.dataTables.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/css/jquery_dataTables_min_css.html">jquery.dataTables.min.css</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap_js.html">dataTables.bootstrap.js</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap_min_js.html">dataTables.bootstrap.min.js</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap4_js.html">dataTables.bootstrap4.js</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/dataTables_bootstrap4_min_js.html">dataTables.bootstrap4.min.js</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/dataTables_foundation_js.html">dataTables.foundation.js</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/dataTables_foundation_min_js.html">dataTables.foundation.min.js</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/dataTables_jqueryui_js.html">dataTables.jqueryui.js</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/dataTables_jqueryui_min_js.html">dataTables.jqueryui.min.js</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/dataTables_semanticui_js.html">dataTables.semanticui.js</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/dataTables_semanticui_min_js.html">dataTables.semanticui.min.js</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/jquery_dataTables_js.html">jquery.dataTables.js</a>
+  
+    <li><a href="../../public/DataTables/DataTables-1_10_18/js/jquery_dataTables_min_js.html">jquery.dataTables.min.js</a>
+  
+    <li><a href="../../public/DataTables/datatables_css.html">datatables.css</a>
+  
+    <li><a href="../../public/DataTables/datatables_js.html">datatables.js</a>
+  
+    <li><a href="../../public/DataTables/datatables_min_css.html">datatables.min.css</a>
+  
+    <li><a href="../../public/DataTables/datatables_min_js.html">datatables.min.js</a>
+  
+    <li><a href="../../public/Home Page/css/JiSlider_css.html">JiSlider.css</a>
+  
+    <li><a href="../../public/Home Page/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../public/Home Page/css/font-awesome_css.html">font-awesome.css</a>
+  
+    <li><a href="../../public/Home Page/css/lightbox_css.html">lightbox.css</a>
+  
+    <li><a href="../../public/Home Page/css/owl_carousel_css.html">owl.carousel.css</a>
+  
+    <li><a href="../../public/Home Page/css/style_css.html">style.css</a>
+  
+    <li><a href="../../public/Home Page/index_html.html">index.html</a>
+  
+    <li><a href="../../public/Home Page/js/JiSlider_js.html">JiSlider.js</a>
+  
+    <li><a href="../../public/Home Page/js/SmoothScroll_min_js.html">SmoothScroll.min.js</a>
+  
+    <li><a href="../../public/Home Page/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../public/Home Page/js/easing_js.html">easing.js</a>
+  
+    <li><a href="../../public/Home Page/js/index_js.html">index.js</a>
+  
+    <li><a href="../../public/Home Page/js/jquery-2_1_4_min_js.html">jquery-2.1.4.min.js</a>
+  
+    <li><a href="../../public/Home Page/js/jquery_countup_js.html">jquery.countup.js</a>
+  
+    <li><a href="../../public/Home Page/js/jquery_waypoints_min_js.html">jquery.waypoints.min.js</a>
+  
+    <li><a href="../../public/Home Page/js/lightbox-plus-jquery_min_js.html">lightbox-plus-jquery.min.js</a>
+  
+    <li><a href="../../public/Home Page/js/moment-timezone-with-data_js.html">moment-timezone-with-data.js</a>
+  
+    <li><a href="../../public/Home Page/js/moment_js.html">moment.js</a>
+  
+    <li><a href="../../public/Home Page/js/move-top_js.html">move-top.js</a>
+  
+    <li><a href="../../public/Home Page/js/owl_carousel_js.html">owl.carousel.js</a>
+  
+    <li><a href="../../public/Home Page/js/timer_js.html">timer.js</a>
+  
+    <li><a href="../../public/JS/Reservations/index_js.html">index.js</a>
+  
+    <li><a href="../../public/JS/SoccerCourts/index_js.html">index.js</a>
+  
+    <li><a href="../../public/Login/css/style_css.html">style.css</a>
+  
+    <li><a href="../../public/Login/index_html.html">index.html</a>
+  
+    <li><a href="../../public/Login/js/easyResponsiveTabs_js.html">easyResponsiveTabs.js</a>
+  
+    <li><a href="../../public/Login/js/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../public/apple-touch-icon-precomposed_png.html">apple-touch-icon-precomposed.png</a>
+  
+    <li><a href="../../public/apple-touch-icon_png.html">apple-touch-icon.png</a>
+  
+    <li><a href="../../public/bootstrap/css/bootstrap-theme_css.html">bootstrap-theme.css</a>
+  
+    <li><a href="../../public/bootstrap/css/bootstrap-theme_css_map.html">bootstrap-theme.css.map</a>
+  
+    <li><a href="../../public/bootstrap/css/bootstrap-theme_min_css.html">bootstrap-theme.min.css</a>
+  
+    <li><a href="../../public/bootstrap/css/bootstrap-theme_min_css_map.html">bootstrap-theme.min.css.map</a>
+  
+    <li><a href="../../public/bootstrap/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../public/bootstrap/css/bootstrap_css_map.html">bootstrap.css.map</a>
+  
+    <li><a href="../../public/bootstrap/css/bootstrap_min_css.html">bootstrap.min.css</a>
+  
+    <li><a href="../../public/bootstrap/css/bootstrap_min_css_map.html">bootstrap.min.css.map</a>
+  
+    <li><a href="../../public/bootstrap/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../public/bootstrap/js/bootstrap_min_js.html">bootstrap.min.js</a>
+  
+    <li><a href="../../public/bootstrap/js/npm_js.html">npm.js</a>
+  
+    <li><a href="../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../../public/fullcalendar/CHANGELOG_txt.html">CHANGELOG</a>
+  
+    <li><a href="../../public/fullcalendar/CONTRIBUTING_txt.html">CONTRIBUTING</a>
+  
+    <li><a href="../../public/fullcalendar/LICENSE_txt.html">LICENSE</a>
+  
+    <li><a href="../../public/fullcalendar/demos/agenda-views_html.html">agenda-views.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/background-events_html.html">background-events.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/basic-views_html.html">basic-views.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/default_html.html">default.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/external-dragging_html.html">external-dragging.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/gcal_html.html">gcal.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/js/theme-chooser_js.html">theme-chooser.js</a>
+  
+    <li><a href="../../public/fullcalendar/demos/json_html.html">json.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/json/events_json.html">events.json</a>
+  
+    <li><a href="../../public/fullcalendar/demos/list-views_html.html">list-views.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/locales_html.html">locales.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/php/get-events_php.html">get-events.php</a>
+  
+    <li><a href="../../public/fullcalendar/demos/php/get-timezones_php.html">get-timezones.php</a>
+  
+    <li><a href="../../public/fullcalendar/demos/php/utils_php.html">utils.php</a>
+  
+    <li><a href="../../public/fullcalendar/demos/selectable_html.html">selectable.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/themes_html.html">themes.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/timezones_html.html">timezones.html</a>
+  
+    <li><a href="../../public/fullcalendar/demos/week-numbers_html.html">week-numbers.html</a>
+  
+    <li><a href="../../public/fullcalendar/fullcalendar_css.html">fullcalendar.css</a>
+  
+    <li><a href="../../public/fullcalendar/fullcalendar_js.html">fullcalendar.js</a>
+  
+    <li><a href="../../public/fullcalendar/fullcalendar_min_css.html">fullcalendar.min.css</a>
+  
+    <li><a href="../../public/fullcalendar/fullcalendar_min_js.html">fullcalendar.min.js</a>
+  
+    <li><a href="../../public/fullcalendar/fullcalendar_print_css.html">fullcalendar.print.css</a>
+  
+    <li><a href="../../public/fullcalendar/fullcalendar_print_min_css.html">fullcalendar.print.min.css</a>
+  
+    <li><a href="../../public/fullcalendar/gcal_js.html">gcal.js</a>
+  
+    <li><a href="../../public/fullcalendar/gcal_min_js.html">gcal.min.js</a>
+  
+    <li><a href="../../public/fullcalendar/lib/jquery-ui_min_js.html">jquery-ui.min.js</a>
+  
+    <li><a href="../../public/fullcalendar/lib/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../public/fullcalendar/lib/moment_min_js.html">moment.min.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale-all_js.html">locale-all.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/af_js.html">af.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ar-dz_js.html">ar-dz.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ar-kw_js.html">ar-kw.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ar-ly_js.html">ar-ly.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ar-ma_js.html">ar-ma.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ar-sa_js.html">ar-sa.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ar-tn_js.html">ar-tn.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ar_js.html">ar.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/bg_js.html">bg.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/bs_js.html">bs.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ca_js.html">ca.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/cs_js.html">cs.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/da_js.html">da.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/de-at_js.html">de-at.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/de-ch_js.html">de-ch.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/de_js.html">de.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/el_js.html">el.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/en-au_js.html">en-au.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/en-ca_js.html">en-ca.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/en-gb_js.html">en-gb.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/en-ie_js.html">en-ie.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/en-nz_js.html">en-nz.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/es-do_js.html">es-do.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/es-us_js.html">es-us.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/es_js.html">es.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/et_js.html">et.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/eu_js.html">eu.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/fa_js.html">fa.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/fi_js.html">fi.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/fr-ca_js.html">fr-ca.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/fr-ch_js.html">fr-ch.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/fr_js.html">fr.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/gl_js.html">gl.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/he_js.html">he.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/hi_js.html">hi.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/hr_js.html">hr.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/hu_js.html">hu.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/id_js.html">id.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/is_js.html">is.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/it_js.html">it.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ja_js.html">ja.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ka_js.html">ka.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/kk_js.html">kk.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ko_js.html">ko.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/lb_js.html">lb.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/lt_js.html">lt.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/lv_js.html">lv.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/mk_js.html">mk.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ms-my_js.html">ms-my.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ms_js.html">ms.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/nb_js.html">nb.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/nl-be_js.html">nl-be.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/nl_js.html">nl.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/nn_js.html">nn.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/pl_js.html">pl.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/pt-br_js.html">pt-br.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/pt_js.html">pt.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ro_js.html">ro.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/ru_js.html">ru.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/sk_js.html">sk.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/sl_js.html">sl.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/sq_js.html">sq.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/sr-cyrl_js.html">sr-cyrl.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/sr_js.html">sr.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/sv_js.html">sv.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/th_js.html">th.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/tr_js.html">tr.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/uk_js.html">uk.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/vi_js.html">vi.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/zh-cn_js.html">zh-cn.js</a>
+  
+    <li><a href="../../public/fullcalendar/locale/zh-tw_js.html">zh-tw.js</a>
+  
+    <li><a href="../../public/jquery-3_3_1_min_js.html">jquery-3.3.1.min.js</a>
+  
+    <li><a href="../../public/robots_txt.html">robots</a>
+  
+    <li><a href="../../tmp/restart_txt.html">restart</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page public/fullcalendar/fullcalendar.css">
+
+<pre>!
+ FullCalendar v3.9.0
+ Docs &amp; License: https://fullcalendar.io/
+ (c) 2018 Adam Shaw</pre>
+
+<p>.fc {</p>
+
+<pre>direction: ltr;
+text-align: left; }</pre>
+
+<p>.fc-rtl {</p>
+
+<pre>text-align: right; }</pre>
+
+<p>body .fc {</p>
+
+<pre>   extra precedence to overcome jqui   
+font-size: 1em; }</pre>
+
+<p>/* Colors ————————————————————————————————–*/ .fc-highlight {</p>
+
+<pre>/* when user is selecting cells */
+background: #bce8f1;
+opacity: .3; }</pre>
+
+<p>.fc-bgevent {</p>
+
+<pre>/* default look for background events */
+background: #8fdf82;
+opacity: .3; }</pre>
+
+<p>.fc-nonbusiness {</p>
+
+<pre>/* default look for non-business-hours areas */
+/* will inherit .fc-bgevent&#39;s styles */
+background: #d7d7d7; }</pre>
+
+<p>/* Buttons (styled &lt;button&gt; tags, normalized to work cross-browser)
+————————————————————————————————–*/ .fc button {</p>
+
+<pre>/* force height to include the border and padding */
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+/* dimensions */
+margin: 0;
+height: 2.1em;
+padding: 0 .6em;
+/* text &amp; cursor */
+font-size: 1em;
+/* normalize */
+white-space: nowrap;
+cursor: pointer; }</pre>
+
+<p>/* Firefox has an annoying inner border */ .fc button::-moz-focus-inner {</p>
+
+<pre>margin: 0;
+padding: 0; }</pre>
+
+<p>.fc-state-default {</p>
+
+<pre>/* non-theme */
+border: 1px solid; }</pre>
+
+<p>.fc-state-default.fc-corner-left {</p>
+
+<pre>/* non-theme */
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px; }</pre>
+
+<p>.fc-state-default.fc-corner-right {</p>
+
+<pre>/* non-theme */
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px; }</pre>
+
+<p>/* icons in buttons */ .fc button .fc-icon {</p>
+
+<pre>/* non-theme */
+position: relative;
+top: -0.05em;
+/* seems to be a good adjustment across browsers */
+margin: 0 .2em;
+vertical-align: middle; }</pre>
+
+<p>/*</p>
+
+<pre> button states
+ borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/)
+/</pre>
+
+<p>.fc-state-default {</p>
+
+<pre>background-color: #f5f5f5;
+background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+background-repeat: repeat-x;
+border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+color: #333;
+text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }</pre>
+
+<p>.fc-state-hover, .fc-state-down, .fc-state-active, .fc-state-disabled {</p>
+
+<pre>color: #333333;
+background-color: #e6e6e6; }</pre>
+
+<p>.fc-state-hover {</p>
+
+<pre>color: #333333;
+text-decoration: none;
+background-position: 0 -15px;
+-webkit-transition: background-position 0.1s linear;
+-moz-transition: background-position 0.1s linear;
+-o-transition: background-position 0.1s linear;
+transition: background-position 0.1s linear; }</pre>
+
+<p>.fc-state-down, .fc-state-active {</p>
+
+<pre>background-color: #cccccc;
+background-image: none;
+box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }</pre>
+
+<p>.fc-state-disabled {</p>
+
+<pre>cursor: default;
+background-image: none;
+opacity: 0.65;
+box-shadow: none; }</pre>
+
+<p>/* Buttons Groups ————————————————————————————————–*/ .fc-button-group {</p>
+
+<pre>display: inline-block; }</pre>
+
+<p>/* every button that is not first in a button group should scootch over one
+pixel and cover the previous button&#39;s border…</p>
+
+<pre>/</pre>
+
+<p>.fc .fc-button-group &gt; * {</p>
+
+<pre>/* extra precedence b/c buttons have margin set to zero */
+float: left;
+margin: 0 0 0 -1px; }</pre>
+
+<p>.fc .fc-button-group &gt; :first-child {</p>
+
+<pre>/* same */
+margin-left: 0; }</pre>
+
+<p>/* Popover ————————————————————————————————–*/ .fc-popover {</p>
+
+<pre>position: absolute;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }</pre>
+
+<p>.fc-popover .fc-header {</p>
+
+<pre>/* TODO: be more consistent with fc-head/fc-body */
+padding: 2px 4px; }</pre>
+
+<p>.fc-popover .fc-header .fc-title {</p>
+
+<pre>margin: 0 2px; }</pre>
+
+<p>.fc-popover .fc-header .fc-close {</p>
+
+<pre>cursor: pointer; }</pre>
+
+<p>.fc-ltr .fc-popover .fc-header .fc-title, .fc-rtl .fc-popover .fc-header
+.fc-close {</p>
+
+<pre>float: left; }</pre>
+
+<p>.fc-rtl .fc-popover .fc-header .fc-title, .fc-ltr .fc-popover .fc-header
+.fc-close {</p>
+
+<pre>float: right; }</pre>
+
+<p>/* Misc Reusable Components ————————————————————————————————–*/ .fc-divider
+{</p>
+
+<pre>border-style: solid;
+border-width: 1px; }</pre>
+
+<p>hr.fc-divider {</p>
+
+<pre>height: 0;
+margin: 0;
+padding: 0 0 2px;
+/* height is unreliable across browsers, so use padding */
+border-width: 1px 0; }</pre>
+
+<p>.fc-clear {</p>
+
+<pre>clear: both; }</pre>
+
+<p>.fc-bg, .fc-bgevent-skeleton, .fc-highlight-skeleton, .fc-helper-skeleton {</p>
+
+<pre>/* these element should always cling to top-left/right corners */
+position: absolute;
+top: 0;
+left: 0;
+right: 0; }</pre>
+
+<p>.fc-bg {</p>
+
+<pre>bottom: 0;
+/* strech bg to bottom edge */ }</pre>
+
+<p>.fc-bg table {</p>
+
+<pre>height: 100%;
+/* strech bg to bottom edge */ }</pre>
+
+<p>/* Tables ————————————————————————————————–*/ .fc table {</p>
+
+<pre>width: 100%;
+box-sizing: border-box;
+/* fix scrollbar issue in firefox */
+table-layout: fixed;
+border-collapse: collapse;
+border-spacing: 0;
+font-size: 1em;
+/* normalize cross-browser */ }</pre>
+
+<p>.fc th {</p>
+
+<pre>text-align: center; }</pre>
+
+<p>.fc th, .fc td {</p>
+
+<pre>border-style: solid;
+border-width: 1px;
+padding: 0;
+vertical-align: top; }</pre>
+
+<p>.fc td.fc-today {</p>
+
+<pre>border-style: double;
+/* overcome neighboring borders */ }</pre>
+
+<p>/* Internal Nav Links ————————————————————————————————–*/ <a
+href="data-goto">a</a> {</p>
+
+<pre>cursor: pointer; }</pre>
+
+<p><a href="data-goto">a</a>:hover {</p>
+
+<pre>text-decoration: underline; }</pre>
+
+<p>/* Fake Table Rows ————————————————————————————————–*/ .fc .fc-row {</p>
+
+<pre>/* extra precedence to overcome themes w/ .ui-widget-content forcing a 1px border */
+/* no visible border by default. but make available if need be (scrollbar width compensation) */
+border-style: solid;
+border-width: 0; }</pre>
+
+<p>.fc-row table {</p>
+
+<pre>/* don&#39;t put left/right border on anything within a fake row.
+   the outer tbody will worry about this */
+border-left: 0 hidden transparent;
+border-right: 0 hidden transparent;
+/* no bottom borders on rows */
+border-bottom: 0 hidden transparent; }</pre>
+
+<p>.fc-row:first-child table {</p>
+
+<pre>border-top: 0 hidden transparent;
+/* no top border on first row */ }</pre>
+
+<p>/* Day Row (used within the header and the DayGrid)
+————————————————————————————————–*/ .fc-row {</p>
+
+<pre>position: relative; }</pre>
+
+<p>.fc-row .fc-bg {</p>
+
+<pre>z-index: 1; }</pre>
+
+<p>/* highlighting cells &amp; background event skeleton */ .fc-row
+.fc-bgevent-skeleton, .fc-row .fc-highlight-skeleton {</p>
+
+<pre>bottom: 0;
+/* stretch skeleton to bottom of row */ }</pre>
+
+<p>.fc-row .fc-bgevent-skeleton table, .fc-row .fc-highlight-skeleton table {</p>
+
+<pre>height: 100%;
+/* stretch skeleton to bottom of row */ }</pre>
+
+<p>.fc-row .fc-highlight-skeleton td, .fc-row .fc-bgevent-skeleton td {</p>
+
+<pre>border-color: transparent; }</pre>
+
+<p>.fc-row .fc-bgevent-skeleton {</p>
+
+<pre>z-index: 2; }</pre>
+
+<p>.fc-row .fc-highlight-skeleton {</p>
+
+<pre>z-index: 3; }</pre>
+
+<p>/* row content (which contains day/week numbers and events) as well as
+“helper” (which contains temporary rendered events).</p>
+
+<pre>/</pre>
+
+<p>.fc-row .fc-content-skeleton {</p>
+
+<pre>position: relative;
+z-index: 4;
+padding-bottom: 2px;
+/* matches the space above the events */ }</pre>
+
+<p>.fc-row .fc-helper-skeleton {</p>
+
+<pre>z-index: 5; }</pre>
+
+<p>.fc .fc-row .fc-content-skeleton table, .fc .fc-row .fc-content-skeleton
+td, .fc .fc-row .fc-helper-skeleton td {</p>
+
+<pre>/* see-through to the background below */
+/* extra precedence to prevent theme-provided backgrounds */
+background: none;
+/* in case &lt;td&gt;s are globally styled */
+border-color: transparent; }</pre>
+
+<p>.fc-row .fc-content-skeleton td, .fc-row .fc-helper-skeleton td {</p>
+
+<pre>/* don&#39;t put a border between events and/or the day number */
+border-bottom: 0; }</pre>
+
+<p>.fc-row .fc-content-skeleton tbody td, .fc-row .fc-helper-skeleton tbody td
+{</p>
+
+<pre>/* don&#39;t put a border between event cells */
+border-top: 0; }</pre>
+
+<p>/* Scrolling Container ————————————————————————————————–*/ .fc-scroller {</p>
+
+<pre>-webkit-overflow-scrolling: touch; }</pre>
+
+<p>/* TODO: move to agenda/basic */ .fc-scroller &gt; .fc-day-grid,
+.fc-scroller &gt; .fc-time-grid {</p>
+
+<pre>position: relative;
+/* re-scope all positions */
+width: 100%;
+/* hack to force re-sizing this inner element when scrollbars appear/disappear */ }</pre>
+
+<p>/* Global Event Styles ————————————————————————————————–*/ .fc-event {</p>
+
+<pre>position: relative;
+/* for resize handle and other inner positioning */
+display: block;
+/* make the &lt;a&gt; tag block */
+font-size: .85em;
+line-height: 1.3;
+border-radius: 3px;
+border: 1px solid #3a87ad;
+/* default BORDER color */ }</pre>
+
+<p>.fc-event, .fc-event-dot {</p>
+
+<pre>background-color: #3a87ad;
+/* default BACKGROUND color */ }</pre>
+
+<p>.fc-event, .fc-event:hover {</p>
+
+<pre>color: #fff;
+/* default TEXT color */
+text-decoration: none;
+/* if &lt;a&gt; has an href */ }</pre>
+
+<p>.<a href="href">fc-event</a>, .fc-event.fc-draggable {</p>
+
+<pre>cursor: pointer;
+/* give events with links and draggable events a hand mouse pointer */ }</pre>
+
+<p>.fc-not-allowed, .fc-not-allowed .fc-event {</p>
+
+<pre>/* to override an event&#39;s custom cursor */
+cursor: not-allowed; }</pre>
+
+<p>.fc-event .fc-bg {</p>
+
+<pre>/* the generic .fc-bg already does position */
+z-index: 1;
+background: #fff;
+opacity: .25; }</pre>
+
+<p>.fc-event .fc-content {</p>
+
+<pre>position: relative;
+z-index: 2; }</pre>
+
+<p>/* resizer (cursor AND touch devices) */ .fc-event .fc-resizer {</p>
+
+<pre>position: absolute;
+z-index: 4; }</pre>
+
+<p>/* resizer (touch devices) */ .fc-event .fc-resizer {</p>
+
+<pre>display: none; }</pre>
+
+<p>.fc-event.fc-allow-mouse-resize .fc-resizer, .fc-event.fc-selected
+.fc-resizer {</p>
+
+<pre>/* only show when hovering or selected (with touch) */
+display: block; }</pre>
+
+<p>/* hit area */ .fc-event.fc-selected .fc-resizer:before {</p>
+
+<pre>/* 40x40 touch area */
+content: &quot;&quot;;
+position: absolute;
+z-index: 9999;
+/* user of this util can scope within a lower z-index */
+top: 50%;
+left: 50%;
+width: 40px;
+height: 40px;
+margin-left: -20px;
+margin-top: -20px; }</pre>
+
+<p>/* Event Selection (only for touch devices)
+————————————————————————————————–*/ .fc-event.fc-selected {</p>
+
+<pre>z-index: 9999 !important;
+/* overcomes inline z-index */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }</pre>
+
+<p>.fc-event.fc-selected.fc-dragging {</p>
+
+<pre>box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3); }</pre>
+
+<p>/* Horizontal Events ————————————————————————————————–*/ /* bigger touch
+area when selected */ .fc-h-event.fc-selected:before {</p>
+
+<pre>content: &quot;&quot;;
+position: absolute;
+z-index: 3;
+/* below resizers */
+top: -10px;
+bottom: -10px;
+left: 0;
+right: 0; }</pre>
+
+<p>/* events that are continuing to/from another week. kill rounded corners
+and butt up against edge */ .fc-ltr .fc-h-event.fc-not-start, .fc-rtl
+.fc-h-event.fc-not-end {</p>
+
+<pre>margin-left: 0;
+border-left-width: 0;
+padding-left: 1px;
+/* replace the border with padding */
+border-top-left-radius: 0;
+border-bottom-left-radius: 0; }</pre>
+
+<p>.fc-ltr .fc-h-event.fc-not-end, .fc-rtl .fc-h-event.fc-not-start {</p>
+
+<pre>margin-right: 0;
+border-right-width: 0;
+padding-right: 1px;
+/* replace the border with padding */
+border-top-right-radius: 0;
+border-bottom-right-radius: 0; }</pre>
+
+<p>/* resizer (cursor AND touch devices) */ /* left resizer  */ .fc-ltr
+.fc-h-event .fc-start-resizer, .fc-rtl .fc-h-event .fc-end-resizer {</p>
+
+<pre>cursor: w-resize;
+left: -1px;
+/* overcome border */ }</pre>
+
+<p>/* right resizer */ .fc-ltr .fc-h-event .fc-end-resizer, .fc-rtl
+.fc-h-event .fc-start-resizer {</p>
+
+<pre>cursor: e-resize;
+right: -1px;
+/* overcome border */ }</pre>
+
+<p>/* resizer (mouse devices) */ .fc-h-event.fc-allow-mouse-resize .fc-resizer
+{</p>
+
+<pre>width: 7px;
+top: -1px;
+/* overcome top border */
+bottom: -1px;
+/* overcome bottom border */ }</pre>
+
+<p>/* resizer (touch devices) */ .fc-h-event.fc-selected .fc-resizer {</p>
+
+<pre>/* 8x8 little dot */
+border-radius: 4px;
+border-width: 1px;
+width: 6px;
+height: 6px;
+border-style: solid;
+border-color: inherit;
+background: #fff;
+/* vertically center */
+top: 50%;
+margin-top: -4px; }</pre>
+
+<p>/* left resizer  */ .fc-ltr .fc-h-event.fc-selected .fc-start-resizer,
+.fc-rtl .fc-h-event.fc-selected .fc-end-resizer {</p>
+
+<pre>margin-left: -4px;
+/* centers the 8x8 dot on the left edge */ }</pre>
+
+<p>/* right resizer */ .fc-ltr .fc-h-event.fc-selected .fc-end-resizer,
+.fc-rtl .fc-h-event.fc-selected .fc-start-resizer {</p>
+
+<pre>margin-right: -4px;
+/* centers the 8x8 dot on the right edge */ }</pre>
+
+<p>/* DayGrid events</p>
+<hr>
+
+<p>We use the full “fc-day-grid-event” class instead of using descendants
+because the event won&#39;t be a descendant of the grid when it is being
+dragged.</p>
+
+<pre>/</pre>
+
+<p>.fc-day-grid-event {</p>
+
+<pre>margin: 1px 2px 0;
+/* spacing between events and edges */
+padding: 0 1px; }</pre>
+
+<p>tr:first-child &gt; td &gt; .fc-day-grid-event {</p>
+
+<pre>margin-top: 2px;
+/* a little bit more space before the first event */ }</pre>
+
+<p>.fc-day-grid-event.fc-selected:after {</p>
+
+<pre>content: &quot;&quot;;
+position: absolute;
+z-index: 1;
+/* same z-index as fc-bg, behind text */
+/* overcome the borders */
+top: -1px;
+right: -1px;
+bottom: -1px;
+left: -1px;
+/* darkening effect */
+background: #000;
+opacity: .25; }</pre>
+
+<p>.fc-day-grid-event .fc-content {</p>
+
+<pre>/* force events to be one-line tall */
+white-space: nowrap;
+overflow: hidden; }</pre>
+
+<p>.fc-day-grid-event .fc-time {</p>
+
+<pre>font-weight: bold; }</pre>
+
+<p>/* resizer (cursor devices) */ /* left resizer  */ .fc-ltr
+.fc-day-grid-event.fc-allow-mouse-resize .fc-start-resizer, .fc-rtl
+.fc-day-grid-event.fc-allow-mouse-resize .fc-end-resizer {</p>
+
+<pre>margin-left: -2px;
+/* to the day cell&#39;s edge */ }</pre>
+
+<p>/* right resizer */ .fc-ltr .fc-day-grid-event.fc-allow-mouse-resize
+.fc-end-resizer, .fc-rtl .fc-day-grid-event.fc-allow-mouse-resize
+.fc-start-resizer {</p>
+
+<pre>margin-right: -2px;
+/* to the day cell&#39;s edge */ }</pre>
+
+<p>/* Event Limiting ————————————————————————————————–*/ /* “more” link that
+represents hidden events */ a.fc-more {</p>
+
+<pre>margin: 1px 3px;
+font-size: .85em;
+cursor: pointer;
+text-decoration: none; }</pre>
+
+<p>a.fc-more:hover {</p>
+
+<pre>text-decoration: underline; }</pre>
+
+<p>.fc-limited {</p>
+
+<pre>/* rows and cells that are hidden because of a &quot;more&quot; link */
+display: none; }</pre>
+
+<p>/* popover that appears when “more” link is clicked */ .fc-day-grid .fc-row
+{</p>
+
+<pre>z-index: 1;
+/* make the &quot;more&quot; popover one higher than this */ }</pre>
+
+<p>.fc-more-popover {</p>
+
+<pre>z-index: 2;
+width: 220px; }</pre>
+
+<p>.fc-more-popover .fc-event-container {</p>
+
+<pre>padding: 10px; }</pre>
+
+<p>/* Now Indicator ————————————————————————————————–*/ .fc-now-indicator {</p>
+
+<pre>position: absolute;
+border: 0 solid red; }</pre>
+
+<p>/* Utilities ————————————————————————————————–*/ .fc-unselectable {</p>
+
+<pre>-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-touch-callout: none;
+-webkit-tap-highlight-color: transparent; }</pre>
+
+<p>/* TODO: more distinction between this file and common.css</p>
+
+<pre>/</pre>
+
+<p>/* Colors ————————————————————————————————–*/ .fc-unthemed th, .fc-unthemed
+td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider,
+.fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover,
+.fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td {</p>
+
+<pre>border-color: #ddd; }</pre>
+
+<p>.fc-unthemed .fc-popover {</p>
+
+<pre>background-color: #fff; }</pre>
+
+<p>.fc-unthemed .fc-divider, .fc-unthemed .fc-popover .fc-header, .fc-unthemed
+.fc-list-heading td {</p>
+
+<pre>background: #eee; }</pre>
+
+<p>.fc-unthemed .fc-popover .fc-header .fc-close {</p>
+
+<pre>color: #666; }</pre>
+
+<p>.fc-unthemed td.fc-today {</p>
+
+<pre>background: #fcf8e3; }</pre>
+
+<p>.fc-unthemed .fc-disabled-day {</p>
+
+<pre>background: #d7d7d7;
+opacity: .3; }</pre>
+
+<p>/* Icons (inline elements with styled text that mock arrow icons)
+————————————————————————————————–*/ .fc-icon {</p>
+
+<pre>display: inline-block;
+height: 1em;
+line-height: 1em;
+font-size: 1em;
+text-align: center;
+overflow: hidden;
+font-family: &quot;Courier New&quot;, Courier, monospace;
+/* don&#39;t allow browser text-selection */
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none; }</pre>
+
+<p>/* Acceptable font-family overrides for individual icons:</p>
+
+<pre>&quot;Arial&quot;, sans-serif
+&quot;Times New Roman&quot;, serif</pre>
+
+<p>NOTE: use percentage font sizes or else old IE chokes</p>
+
+<pre>/</pre>
+
+<p>.fc-icon:after {</p>
+
+<pre>position: relative; }</pre>
+
+<p>.fc-icon-left-single-arrow:after {</p>
+
+<pre>content: &quot;\2039&quot;;
+font-weight: bold;
+font-size: 200%;
+top: -7%; }</pre>
+
+<p>.fc-icon-right-single-arrow:after {</p>
+
+<pre>content: &quot;\203A&quot;;
+font-weight: bold;
+font-size: 200%;
+top: -7%; }</pre>
+
+<p>.fc-icon-left-double-arrow:after {</p>
+
+<pre>content: &quot;\AB&quot;;
+font-size: 160%;
+top: -7%; }</pre>
+
+<p>.fc-icon-right-double-arrow:after {</p>
+
+<pre>content: &quot;\BB&quot;;
+font-size: 160%;
+top: -7%; }</pre>
+
+<p>.fc-icon-left-triangle:after {</p>
+
+<pre>content: &quot;\25C4&quot;;
+font-size: 125%;
+top: 3%; }</pre>
+
+<p>.fc-icon-right-triangle:after {</p>
+
+<pre>content: &quot;\25BA&quot;;
+font-size: 125%;
+top: 3%; }</pre>
+
+<p>.fc-icon-down-triangle:after {</p>
+
+<pre>content: &quot;\25BC&quot;;
+font-size: 125%;
+top: 2%; }</pre>
+
+<p>.fc-icon-x:after {</p>
+
+<pre>content: &quot;\D7&quot;;
+font-size: 200%;
+top: 6%; }</pre>
+
+<p>/* Popover ————————————————————————————————–*/ .fc-unthemed .fc-popover {</p>
+
+<pre>border-width: 1px;
+border-style: solid; }</pre>
+
+<p>.fc-unthemed .fc-popover .fc-header .fc-close {</p>
+
+<pre>font-size: .9em;
+margin-top: 2px; }</pre>
+
+<p>/* List View ————————————————————————————————–*/ .fc-unthemed
+.fc-list-item:hover td {</p>
+
+<pre>background-color: #f5f5f5; }</pre>
+
+<p>/* Colors ————————————————————————————————–*/ .ui-widget .fc-disabled-day {</p>
+
+<pre>background-image: none; }</pre>
+
+<p>/* Popover ————————————————————————————————–*/ .fc-popover &gt;
+.ui-widget-header + .ui-widget-content {</p>
+
+<pre>border-top: 0;
+/* where they meet, let the header have the border */ }</pre>
+
+<p>/* Global Event Styles ————————————————————————————————–*/ .ui-widget
+.fc-event {</p>
+
+<pre>/* overpower jqui&#39;s styles on &lt;a&gt; tags. TODO: more DRY */
+color: #fff;
+/* default TEXT color */
+text-decoration: none;
+/* if &lt;a&gt; has an href */
+/* undo ui-widget-header bold */
+font-weight: normal; }</pre>
+
+<p>/* TimeGrid axis running down the side (for both the all-day area and the
+slot area) ————————————————————————————————–*/ .ui-widget td.fc-axis {</p>
+
+<pre>font-weight: normal;
+/* overcome bold */ }</pre>
+
+<p>/* TimeGrid Slats (lines that run horizontally)
+————————————————————————————————–*/ .fc-time-grid .fc-slats
+.ui-widget-content {</p>
+
+<pre>background: none;
+/* see through to fc-bg */ }</pre>
+
+<p>.fc.fc-bootstrap3 a {</p>
+
+<pre>text-decoration: none; }</pre>
+
+<p>.fc.fc-bootstrap3 <a href="data-goto">a</a>:hover {</p>
+
+<pre>text-decoration: underline; }</pre>
+
+<p>.fc-bootstrap3 hr.fc-divider {</p>
+
+<pre>border-color: inherit; }</pre>
+
+<p>.fc-bootstrap3 .fc-today.alert {</p>
+
+<pre>border-radius: 0; }</pre>
+
+<p>/* Popover ————————————————————————————————–*/ .fc-bootstrap3 .fc-popover
+.panel-body {</p>
+
+<pre>padding: 0; }</pre>
+
+<p>/* TimeGrid Slats (lines that run horizontally)
+————————————————————————————————–*/ .fc-bootstrap3 .fc-time-grid .fc-slats
+table {</p>
+
+<pre>/* some themes have background color. see through to slats */
+background: none; }</pre>
+
+<p>.fc.fc-bootstrap4 a {</p>
+
+<pre>text-decoration: none; }</pre>
+
+<p>.fc.fc-bootstrap4 <a href="data-goto">a</a>:hover {</p>
+
+<pre>text-decoration: underline; }</pre>
+
+<p>.fc-bootstrap4 hr.fc-divider {</p>
+
+<pre>border-color: inherit; }</pre>
+
+<p>.fc-bootstrap4 .fc-today.alert {</p>
+
+<pre>border-radius: 0; }</pre>
+
+<p>.fc-bootstrap4 <a href="href">a.fc-event:not(</a>):<a
+href="tabindex">not(</a>) {</p>
+
+<pre>color: #fff; }</pre>
+
+<p>.fc-bootstrap4 .fc-popover.card {</p>
+
+<pre>position: absolute; }</pre>
+
+<p>/* Popover ————————————————————————————————–*/ .fc-bootstrap4 .fc-popover
+.card-body {</p>
+
+<pre>padding: 0; }</pre>
+
+<p>/* TimeGrid Slats (lines that run horizontally)
+————————————————————————————————–*/ .fc-bootstrap4 .fc-time-grid .fc-slats
+table {</p>
+
+<pre>/* some themes have background color. see through to slats */
+background: none; }</pre>
+
+<p>/* Toolbar ————————————————————————————————–*/ .fc-toolbar {</p>
+
+<pre>text-align: center; }</pre>
+
+<p>.fc-toolbar.fc-header-toolbar {</p>
+
+<pre>margin-bottom: 1em; }</pre>
+
+<p>.fc-toolbar.fc-footer-toolbar {</p>
+
+<pre>margin-top: 1em; }</pre>
+
+<p>.fc-toolbar .fc-left {</p>
+
+<pre>float: left; }</pre>
+
+<p>.fc-toolbar .fc-right {</p>
+
+<pre>float: right; }</pre>
+
+<p>.fc-toolbar .fc-center {</p>
+
+<pre>display: inline-block; }</pre>
+
+<p>/* the things within each left/right/center section */ .fc .fc-toolbar &gt;
+* &gt; * {</p>
+
+<pre>/* extra precedence to override button border margins */
+float: left;
+margin-left: .75em; }</pre>
+
+<p>/* the first thing within each left/center/right section */ .fc .fc-toolbar
+&gt; * &gt; :first-child {</p>
+
+<pre>/* extra precedence to override button border margins */
+margin-left: 0; }</pre>
+
+<p>/* title text */ .fc-toolbar h2 {</p>
+
+<pre>margin: 0; }</pre>
+
+<p>/* button layering (for border precedence) */ .fc-toolbar button {</p>
+
+<pre>position: relative; }</pre>
+
+<p>.fc-toolbar .fc-state-hover, .fc-toolbar .ui-state-hover {</p>
+
+<pre>z-index: 2; }</pre>
+
+<p>.fc-toolbar .fc-state-down {</p>
+
+<pre>z-index: 3; }</pre>
+
+<p>.fc-toolbar .fc-state-active, .fc-toolbar .ui-state-active {</p>
+
+<pre>z-index: 4; }</pre>
+
+<p>.fc-toolbar button:focus {</p>
+
+<pre>z-index: 5; }</pre>
+
+<p>/* View Structure ————————————————————————————————–*/ /* undo twitter
+bootstrap&#39;s box-sizing rules. normalizes positioning techniques */ /*
+don&#39;t do this for the toolbar because we&#39;ll want bootstrap to style
+those buttons as some pt */ .fc-view-container *, .fc-view-container
+*:before, .fc-view-container *:after {</p>
+
+<pre>-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box; }</pre>
+
+<p>.fc-view, .fc-view &gt; table {</p>
+
+<pre>/* so dragged elements can be above the view&#39;s main element */
+position: relative;
+z-index: 1; }</pre>
+
+<p>/* BasicView ————————————————————————————————–*/ /* day row structure */
+.fc-basicWeek-view .fc-content-skeleton, .fc-basicDay-view
+.fc-content-skeleton {</p>
+
+<pre>/* there may be week numbers in these views, so no padding-top */
+padding-bottom: 1em;
+/* ensure a space at bottom of cell for user selecting/clicking */ }</pre>
+
+<p>.fc-basic-view .fc-body .fc-row {</p>
+
+<pre>min-height: 4em;
+/* ensure that all rows are at least this tall */ }</pre>
+
+<p>/* a “rigid” row will take up a constant amount of height because
+content-skeleton is absolute */ .fc-row.fc-rigid {</p>
+
+<pre>overflow: hidden; }</pre>
+
+<p>.fc-row.fc-rigid .fc-content-skeleton {</p>
+
+<pre>position: absolute;
+top: 0;
+left: 0;
+right: 0; }</pre>
+
+<p>/* week and day number styling */ .fc-day-top.fc-other-month {</p>
+
+<pre>opacity: 0.3; }</pre>
+
+<p>.fc-basic-view .fc-week-number, .fc-basic-view .fc-day-number {</p>
+
+<pre>padding: 2px; }</pre>
+
+<p>.fc-basic-view th.fc-week-number, .fc-basic-view th.fc-day-number {</p>
+
+<pre>padding: 0 2px;
+/* column headers can&#39;t have as much v space */ }</pre>
+
+<p>.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {</p>
+
+<pre>float: right; }</pre>
+
+<p>.fc-rtl .fc-basic-view .fc-day-top .fc-day-number {</p>
+
+<pre>float: left; }</pre>
+
+<p>.fc-ltr .fc-basic-view .fc-day-top .fc-week-number {</p>
+
+<pre>float: left;
+border-radius: 0 0 3px 0; }</pre>
+
+<p>.fc-rtl .fc-basic-view .fc-day-top .fc-week-number {</p>
+
+<pre>float: right;
+border-radius: 0 0 0 3px; }</pre>
+
+<p>.fc-basic-view .fc-day-top .fc-week-number {</p>
+
+<pre>min-width: 1.5em;
+text-align: center;
+background-color: #f2f2f2;
+color: #808080; }</pre>
+
+<p>/* when week/day number have own column */ .fc-basic-view td.fc-week-number
+{</p>
+
+<pre>text-align: center; }</pre>
+
+<p>.fc-basic-view td.fc-week-number &gt; * {</p>
+
+<pre>/* work around the way we do column resizing and ensure a minimum width */
+display: inline-block;
+min-width: 1.25em; }</pre>
+
+<p>/* AgendaView all-day area ————————————————————————————————–*/
+.fc-agenda-view .fc-day-grid {</p>
+
+<pre>position: relative;
+z-index: 2;
+/* so the &quot;more..&quot; popover will be over the time grid */ }</pre>
+
+<p>.fc-agenda-view .fc-day-grid .fc-row {</p>
+
+<pre>min-height: 3em;
+/* all-day section will never get shorter than this */ }</pre>
+
+<p>.fc-agenda-view .fc-day-grid .fc-row .fc-content-skeleton {</p>
+
+<pre>padding-bottom: 1em;
+/* give space underneath events for clicking/selecting days */ }</pre>
+
+<p>/* TimeGrid axis running down the side (for both the all-day area and the
+slot area) ————————————————————————————————–*/ .fc .fc-axis {</p>
+
+<pre>/* .fc to overcome default cell styles */
+vertical-align: middle;
+padding: 0 4px;
+white-space: nowrap; }</pre>
+
+<p>.fc-ltr .fc-axis {</p>
+
+<pre>text-align: right; }</pre>
+
+<p>.fc-rtl .fc-axis {</p>
+
+<pre>text-align: left; }</pre>
+
+<p>/* TimeGrid Structure ————————————————————————————————–*/
+.fc-time-grid-container, .fc-time-grid {</p>
+
+<pre>/* so slats/bg/content/etc positions get scoped within here */
+position: relative;
+z-index: 1; }</pre>
+
+<p>.fc-time-grid {</p>
+
+<pre>min-height: 100%;
+/* so if height setting is &#39;auto&#39;, .fc-bg stretches to fill height */ }</pre>
+
+<p>.fc-time-grid table {</p>
+
+<pre>/* don&#39;t put outer borders on slats/bg/content/etc */
+border: 0 hidden transparent; }</pre>
+
+<p>.fc-time-grid &gt; .fc-bg {</p>
+
+<pre>z-index: 1; }</pre>
+
+<p>.fc-time-grid .fc-slats, .fc-time-grid &gt; hr {</p>
+
+<pre>/* the &lt;hr&gt; AgendaView injects when grid is shorter than scroller */
+position: relative;
+z-index: 2; }</pre>
+
+<p>.fc-time-grid .fc-content-col {</p>
+
+<pre>position: relative;
+/* because now-indicator lives directly inside */ }</pre>
+
+<p>.fc-time-grid .fc-content-skeleton {</p>
+
+<pre>position: absolute;
+z-index: 3;
+top: 0;
+left: 0;
+right: 0; }</pre>
+
+<p>/* divs within a cell within the fc-content-skeleton */ .fc-time-grid
+.fc-business-container {</p>
+
+<pre>position: relative;
+z-index: 1; }</pre>
+
+<p>.fc-time-grid .fc-bgevent-container {</p>
+
+<pre>position: relative;
+z-index: 2; }</pre>
+
+<p>.fc-time-grid .fc-highlight-container {</p>
+
+<pre>position: relative;
+z-index: 3; }</pre>
+
+<p>.fc-time-grid .fc-event-container {</p>
+
+<pre>position: relative;
+z-index: 4; }</pre>
+
+<p>.fc-time-grid .fc-now-indicator-line {</p>
+
+<pre>z-index: 5; }</pre>
+
+<p>.fc-time-grid .fc-helper-container {</p>
+
+<pre>/* also is fc-event-container */
+position: relative;
+z-index: 6; }</pre>
+
+<p>/* TimeGrid Slats (lines that run horizontally)
+————————————————————————————————–*/ .fc-time-grid .fc-slats td {</p>
+
+<pre>height: 1.5em;
+border-bottom: 0;
+/* each cell is responsible for its top border */ }</pre>
+
+<p>.fc-time-grid .fc-slats .fc-minor td {</p>
+
+<pre>border-top-style: dotted; }</pre>
+
+<p>/* TimeGrid Highlighting Slots ————————————————————————————————–*/
+.fc-time-grid .fc-highlight-container {</p>
+
+<pre>/* a div within a cell within the fc-highlight-skeleton */
+position: relative;
+/* scopes the left/right of the fc-highlight to be in the column */ }</pre>
+
+<p>.fc-time-grid .fc-highlight {</p>
+
+<pre>position: absolute;
+left: 0;
+right: 0;
+/* top and bottom will be in by JS */ }</pre>
+
+<p>/* TimeGrid Event Containment ————————————————————————————————–*/ .fc-ltr
+.fc-time-grid .fc-event-container {</p>
+
+<pre>/* space on the sides of events for LTR (default) */
+margin: 0 2.5% 0 2px; }</pre>
+
+<p>.fc-rtl .fc-time-grid .fc-event-container {</p>
+
+<pre>/* space on the sides of events for RTL */
+margin: 0 2px 0 2.5%; }</pre>
+
+<p>.fc-time-grid .fc-event, .fc-time-grid .fc-bgevent {</p>
+
+<pre>position: absolute;
+z-index: 1;
+/* scope inner z-index&#39;s */ }</pre>
+
+<p>.fc-time-grid .fc-bgevent {</p>
+
+<pre>/* background events always span full width */
+left: 0;
+right: 0; }</pre>
+
+<p>/* Generic Vertical Event ————————————————————————————————–*/
+.fc-v-event.fc-not-start {</p>
+
+<pre>/* events that are continuing from another day */
+/* replace space made by the top border with padding */
+border-top-width: 0;
+padding-top: 1px;
+/* remove top rounded corners */
+border-top-left-radius: 0;
+border-top-right-radius: 0; }</pre>
+
+<p>.fc-v-event.fc-not-end {</p>
+
+<pre>/* replace space made by the top border with padding */
+border-bottom-width: 0;
+padding-bottom: 1px;
+/* remove bottom rounded corners */
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0; }</pre>
+
+<p>/* TimeGrid Event Styling</p>
+<hr>
+
+<p>We use the full “fc-time-grid-event” class instead of using descendants
+because the event won&#39;t be a descendant of the grid when it is being
+dragged.</p>
+
+<pre>/</pre>
+
+<p>.fc-time-grid-event {</p>
+
+<pre>overflow: hidden;
+/* don&#39;t let the bg flow over rounded corners */ }</pre>
+
+<p>.fc-time-grid-event.fc-selected {</p>
+
+<pre>/* need to allow touch resizers to extend outside event&#39;s bounding box */
+/* common fc-selected styles hide the fc-bg, so don&#39;t need this anyway */
+overflow: visible; }</pre>
+
+<p>.fc-time-grid-event.fc-selected .fc-bg {</p>
+
+<pre>display: none;
+/* hide semi-white background, to appear darker */ }</pre>
+
+<p>.fc-time-grid-event .fc-content {</p>
+
+<pre>overflow: hidden;
+/* for when .fc-selected */ }</pre>
+
+<p>.fc-time-grid-event .fc-time, .fc-time-grid-event .fc-title {</p>
+
+<pre>padding: 0 1px; }</pre>
+
+<p>.fc-time-grid-event .fc-time {</p>
+
+<pre>font-size: .85em;
+white-space: nowrap; }</pre>
+
+<p>/* short mode, where time and title are on the same line */
+.fc-time-grid-event.fc-short .fc-content {</p>
+
+<pre>/* don&#39;t wrap to second line (now that contents will be inline) */
+white-space: nowrap; }</pre>
+
+<p>.fc-time-grid-event.fc-short .fc-time, .fc-time-grid-event.fc-short
+.fc-title {</p>
+
+<pre>/* put the time and title on the same line */
+display: inline-block;
+vertical-align: top; }</pre>
+
+<p>.fc-time-grid-event.fc-short .fc-time span {</p>
+
+<pre>display: none;
+/* don&#39;t display the full time text... */ }</pre>
+
+<p>.fc-time-grid-event.fc-short .fc-time:before {</p>
+
+<pre>content: attr(data-start);
+/* ...instead, display only the start time */ }</pre>
+
+<p>.fc-time-grid-event.fc-short .fc-time:after {</p>
+
+<pre>content: &quot;\A0-\A0&quot;;
+/* seperate with a dash, wrapped in nbsp&#39;s */ }</pre>
+
+<p>.fc-time-grid-event.fc-short .fc-title {</p>
+
+<pre>font-size: .85em;
+/* make the title text the same size as the time */
+padding: 0;
+/* undo padding from above */ }</pre>
+
+<p>/* resizer (cursor device) */ .fc-time-grid-event.fc-allow-mouse-resize
+.fc-resizer {</p>
+
+<pre>left: 0;
+right: 0;
+bottom: 0;
+height: 8px;
+overflow: hidden;
+line-height: 8px;
+font-size: 11px;
+font-family: monospace;
+text-align: center;
+cursor: s-resize; }</pre>
+
+<p>.fc-time-grid-event.fc-allow-mouse-resize .fc-resizer:after {</p>
+
+<pre>content: &quot;=&quot;; }</pre>
+
+<p>/* resizer (touch device) */ .fc-time-grid-event.fc-selected .fc-resizer {</p>
+
+<pre>/* 10x10 dot */
+border-radius: 5px;
+border-width: 1px;
+width: 8px;
+height: 8px;
+border-style: solid;
+border-color: inherit;
+background: #fff;
+/* horizontally center */
+left: 50%;
+margin-left: -5px;
+/* center on the bottom edge */
+bottom: -5px; }</pre>
+
+<p>/* Now Indicator ————————————————————————————————–*/ .fc-time-grid
+.fc-now-indicator-line {</p>
+
+<pre>border-top-width: 1px;
+left: 0;
+right: 0; }</pre>
+
+<p>/* arrow on axis */ .fc-time-grid .fc-now-indicator-arrow {</p>
+
+<pre>margin-top: -5px;
+/* vertically center on top coordinate */ }</pre>
+
+<p>.fc-ltr .fc-time-grid .fc-now-indicator-arrow {</p>
+
+<pre>left: 0;
+/* triangle pointing right... */
+border-width: 5px 0 5px 6px;
+border-top-color: transparent;
+border-bottom-color: transparent; }</pre>
+
+<p>.fc-rtl .fc-time-grid .fc-now-indicator-arrow {</p>
+
+<pre>right: 0;
+/* triangle pointing left... */
+border-width: 5px 6px 5px 0;
+border-top-color: transparent;
+border-bottom-color: transparent; }</pre>
+
+<p>/* List View ————————————————————————————————–*/ /* possibly reusable */
+.fc-event-dot {</p>
+
+<pre>display: inline-block;
+width: 10px;
+height: 10px;
+border-radius: 5px; }</pre>
+
+<p>/* view wrapper */ .fc-rtl .fc-list-view {</p>
+
+<pre>direction: rtl;
+/* unlike core views, leverage browser RTL */ }</pre>
+
+<p>.fc-list-view {</p>
+
+<pre>border-width: 1px;
+border-style: solid; }</pre>
+
+<p>/* table resets */ .fc .fc-list-table {</p>
+
+<pre>table-layout: auto;
+/* for shrinkwrapping cell content */ }</pre>
+
+<p>.fc-list-table td {</p>
+
+<pre>border-width: 1px 0 0;
+padding: 8px 14px; }</pre>
+
+<p>.fc-list-table tr:first-child td {</p>
+
+<pre>border-top-width: 0; }</pre>
+
+<p>/* day headings with the list */ .fc-list-heading {</p>
+
+<pre>border-bottom-width: 1px; }</pre>
+
+<p>.fc-list-heading td {</p>
+
+<pre>font-weight: bold; }</pre>
+
+<p>.fc-ltr .fc-list-heading-main {</p>
+
+<pre>float: left; }</pre>
+
+<p>.fc-ltr .fc-list-heading-alt {</p>
+
+<pre>float: right; }</pre>
+
+<p>.fc-rtl .fc-list-heading-main {</p>
+
+<pre>float: right; }</pre>
+
+<p>.fc-rtl .fc-list-heading-alt {</p>
+
+<pre>float: left; }</pre>
+
+<p>/* event list items */ .fc-list-item.fc-has-url {</p>
+
+<pre>cursor: pointer;
+/* whole row will be clickable */ }</pre>
+
+<p>.fc-list-item-marker, .fc-list-item-time {</p>
+
+<pre>white-space: nowrap;
+width: 1px; }</pre>
+
+<p>/* make the dot closer to the event title */ .fc-ltr .fc-list-item-marker {</p>
+
+<pre>padding-right: 0; }</pre>
+
+<p>.fc-rtl .fc-list-item-marker {</p>
+
+<pre>padding-left: 0; }</pre>
+
+<p>.fc-list-item-title a {</p>
+
+<pre>/* every event title cell has an &lt;a&gt; tag */
+text-decoration: none;
+color: inherit; }</pre>
+
+<p>.fc-list-item-title <a href="href">a</a>:hover {</p>
+
+<pre>/* hover effect only on titles with hrefs */
+text-decoration: underline; }</pre>
+
+<p>/* message when no events */ .fc-list-empty-wrap2 {</p>
+
+<pre>position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0; }</pre>
+
+<p>.fc-list-empty-wrap1 {</p>
+
+<pre>width: 100%;
+height: 100%;
+display: table; }</pre>
+
+<p>.fc-list-empty {</p>
+
+<pre>display: table-cell;
+vertical-align: middle;
+text-align: center; }</pre>
+
+<p>.fc-unthemed .fc-list-empty {</p>
+
+<pre>/* theme will provide own background */
+background-color: #eee; }</pre>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.4.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
