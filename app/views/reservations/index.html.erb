@@ -25,7 +25,9 @@ body {
 
 
 </style>
-<div class="container">
+
+<div style="display: <%= (user_signed_in? && current_user.is_admin?) ? 'none' : 'block' %> ">
+<div class="container" >
   <h1 style="text-align:center">Reservas</h1>
 
   <div class="row" >
@@ -35,10 +37,10 @@ body {
 <div class="row">
 <div id='calendar'></div>
 </div>
+</div>
 
 
-
-
+<div style="display: <%= (user_signed_in? && !current_user.is_admin?) ? 'none' : 'block' %> ">
 <h1>Reservations</h1>
 
 <table class="table table-responsive table-bordered table-striped table-hover">
@@ -53,16 +55,15 @@ body {
   </thead>
 
   <tbody>
-  byebug
     <% @reservations.each do |reservation| %>
       <tr>
         <td><%= reservation.dateOfReservation %></td>
         <td><%= reservation.timeOfReservation %></td>
         <td><%= reservation.isActive %></td>
         <td><%= reservation.price %></td>
-        <td><%= link_to 'Show', reservation,class: "btn btn-default" %></td>
-        <td><%= link_to 'Edit', edit_reservation_path(reservation),class: "btn btn-info" %></td>
-        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger" %></td>
+        <td><%= link_to 'Ver', reservation,class: "btn btn-default" %></td>
+        <td><%= link_to 'Editar', edit_reservation_path(reservation),class: "btn btn-info" %></td>
+        <!--<td><%= link_to 'Cancelar', reservation, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger" %></td>-->
       </tr>
     <% end %>
   </tbody>
@@ -71,3 +72,5 @@ body {
 <br>
 
 <%= link_to 'New Reservation', new_reservation_path, class: "btn btn-success" %>
+
+</div>

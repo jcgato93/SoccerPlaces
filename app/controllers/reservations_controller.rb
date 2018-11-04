@@ -15,7 +15,7 @@ class ReservationsController < ApplicationController
     @reservations = Reservation.all
     # @test= SoccerCourt.includes(:reservation).find(params[:soccer_court_id])
     byebug
-    @soccer_court_id= params[:soccer_court_id]
+     @soccer_court_id= params[:soccer_court_id]
   end
 
   # GET /reservations/getReservations/get
@@ -32,7 +32,11 @@ class ReservationsController < ApplicationController
   # POST /reservations/getReservations/misReservas
   # Retorna la vista de las reservas activas de un usuario
   def getMisReservas
-    render "MisReservas"
+
+    test =  SoccerCourt.joins(:reservation).where(reservations: {user_id: 1}).select('*');
+    @reservationsOfUser =test
+    byebug
+    # render "MisReservas"       
   end
 
   # GET /reservations/1
@@ -47,8 +51,9 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.new
     @soccer_court_id = params[:soccer_court_id]
     date=params[:date]
-  
-    @reservations= Reservation.where(soccer_court_id: @soccer_court_id, isActive: true, dateOfReservation: date)        
+    
+    @reservations= Reservation.where(soccer_court_id: @soccer_court_id, isActive: true, dateOfReservation: date)
+   
   end
 
   # GET /reservations/1/edit
@@ -62,7 +67,7 @@ class ReservationsController < ApplicationController
   # de notificacion al usuario
   def create
     @reservation = Reservation.new(reservation_params)
-
+    
     # @reservation.timeOfReservation=@reservation.timeOfReservation.strftime('%H')
     byebug
     respond_to do |format|
@@ -99,9 +104,11 @@ class ReservationsController < ApplicationController
   # DELETE /reservations/1.json
   # Elinima una reserva
   def destroy
-    @reservation.destroy
+    
     respond_to do |format|
-      format.html { redirect_to reservations_url, notice: 'Reservation was successfully destroyed.' }
+      @reservation.isActive = false;
+      @reservation.update(@reservation);
+      format.html { redirect_to reservations_url, notice: 'La reserva se cancelo correctamente' }
       format.json { head :no_content }
     end
   end
