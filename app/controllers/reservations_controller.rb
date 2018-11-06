@@ -33,11 +33,25 @@ class ReservationsController < ApplicationController
   # Retorna la vista de las reservas activas de un usuario
   def getMisReservas
 
-    test =  SoccerCourt.joins(:reservation).where(reservations: {user_id: 1}).select('*');
-    @reservationsOfUser =test
-    byebug
-    # render "MisReservas"       
+    test =  SoccerCourt.joins(:reservation).where(reservations: {user_id: 1,isActive: true}).select('*');
+    @reservationsOfUser =test    
+    render "MisReservas"       
   end
+
+  # GET /reservations/reservation_id
+  # Cambia el estatus de la reserva a cancelado
+  def cancelReservation
+  
+    id = params[:id]    
+    reservation = Reservation.find_by(id: id)
+    reservation.isActive = false;
+    reservation.save
+
+    test =  SoccerCourt.joins(:reservation).where(reservations: {user_id: 1,isActive: true}).select('*');
+    @reservationsOfUser =test
+    render "MisReservas"
+  end
+
 
   # GET /reservations/1
   # GET /reservations/1.json
@@ -49,7 +63,7 @@ class ReservationsController < ApplicationController
   # Muestra la vista para registrar una reserva
   def new
     @reservation = Reservation.new
-    @soccer_court_id = params[:soccer_court_id]
+    @soccer_court_id = params[:id]
     date=params[:date]
     
     @reservations= Reservation.where(soccer_court_id: @soccer_court_id, isActive: true, dateOfReservation: date)

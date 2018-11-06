@@ -8,4 +8,5 @@ Rails.application.routes.draw do
 
   get "/reservations/getreservations/get", :to => 'reservations#getreservations'
   get "/reservations/getreservations/getMisReservas", :to => 'reservations#getMisReservas'
+  get "/reservations/getreservations/cancelReservation", :to => 'reservations#cancelReservation'
 end
